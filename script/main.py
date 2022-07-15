@@ -1,6 +1,5 @@
 import sys
 import os
-import shutil
 import argparse
 import subprocess
 from script.fpocket import fpoc_lf,fpoc_lb

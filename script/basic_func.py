@@ -4,7 +4,6 @@ import math
 import shutil
 import numpy as np
 import pandas as pd
-from Bio.PDB import *
 
 #delete dir
 def clean_dir(name):
@@ -106,19 +105,3 @@ def lat_gen(inputname, column, outputname):
             print('HETATM'+num_pdb+'      PLA A   1     '+one_x+' '+one_y+' '+one_z+'  1.00 10.00           H', file=poc)
     subprocess.call(['rm', 'lat.pdb'])
     subprocess.call(['rm', 'lat_ex.txt'])
-
-def Bio_position(file, num):
-    parser = PDBParser()
-    data = parser.get_structure("obj", file)
-    for model in data.get_list():
-        for chain in model.get_list():
-            for residue in chain.get_list():
-                residue.get_resname()
-                atom = residue.get_list()[num]
-                name = atom.get_name()
-                vec = np.array(atom.get_vector())
-    return name, vec
-
-def getNearestValue(list, num):
-    idx = np.abs(np.asarray(list)-num).argmin()
-    return list[idx]
