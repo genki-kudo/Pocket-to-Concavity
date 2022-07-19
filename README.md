@@ -24,7 +24,7 @@ You can use P2C if you have protein structure file(.pdb) or complex structure fi
   * pymol(2.5.2)
 
 ## Installation
-Download this source code from github, and set PATH in This directory.
+Download this source code from github, and set PATH in this directory.  
 ``` git clone https://github.com/genki-kudo/Pocket-to-Concavity ```  
 
 
