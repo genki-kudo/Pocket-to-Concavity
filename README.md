@@ -15,13 +15,17 @@ You can use P2C if you have protein structure file(.pdb) or complex structure fi
   You can install it according to fpocket github.(https://github.com/Discngine/fpocket)  
   We tested P2C on fpocket2.
 
-* python
+* python  
   We tested P2C on python3.7.10  
   Several modules are needed.
   * numpy(1.21.2)
   * pandas(2.8.2)
   * sklearn(1.0.2)
   * pymol(2.5.2)
+
+## Installation
+Download this source code from github, and set PATH in This directory.
+``` git clone https://github.com/genki-kudo/Pocket-to-Concavity ```  
 
 
 
