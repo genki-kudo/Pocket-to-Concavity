@@ -27,7 +27,12 @@ You can use P2C if you have protein structure file(.pdb) or complex structure fi
 Download this source code from github, and set PATH in this directory.  
 ~~~
 git clone https://github.com/genki-kudo/Pocket-to-Concavity  
-export PATH
+export P2C=/path/to/source/directory
+~~~
+
+## Running
+~~~
+python ${P2C}/pocket_shapeup.py -h
 ~~~
 
 
