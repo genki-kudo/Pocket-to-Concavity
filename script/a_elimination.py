@@ -1,7 +1,6 @@
 from script.basic_func import vec_xyz
 from script.basic_func import t_file
 import numpy as np
-import subprocess
 
 def elim(defpoc, outdir):
     nshape = './'+outdir+'/newshape_pocket.pqr'

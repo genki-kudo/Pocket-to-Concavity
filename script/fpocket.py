@@ -1,5 +1,4 @@
 import subprocess
-import os
 import numpy as np
 from script.basic_func import t_file, vec_xyz, dist_cf
 
