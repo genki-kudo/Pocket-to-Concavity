@@ -30,7 +30,15 @@ git clone https://github.com/genki-kudo/Pocket-to-Concavity
 export P2C=/path/to/source/directory
 ~~~
 
+## Preparation of input files
+* **Ligand-Free(LF) mode**  
+  In the LF mode of P2C, you need to prepare **protein 3D structure file (pdb format)**. If the PDB file contains substrates such as DNA, RNA, ligands, etc., I recommend removing them so that fpocket can work properly.
+  
+* **Ligand-Bound(LB) mode**  
+  In the LB mode of P2C, you need to prepare **protein 3D structure file (pdb format)** as in LF mode. In addition to this, **ligand structure file (pdb format)** is required. the ligand file is used to obtain coordinate information during pocket selection and empty site identification stages, so please prepare the file that contain coordinates in the protein-bound state.
+
 ## Running
+
 ~~~
 python ${P2C}/pocket_shapeup.py -h
 ~~~
