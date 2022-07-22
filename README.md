@@ -53,10 +53,54 @@ export P2C=/path/to/source/directory
   In the LB mode of P2C, you need to prepare **protein 3D structure file (pdb format)** as in LF mode. In addition to this, **ligand structure file (pdb format)** is required. the ligand file is used to obtain coordinate information during pocket selection and empty site identification stages, so please prepare the file that contain coordinates in the protein-bound state.
 
 ## Running
+To view options of P2C:
+~~~
+$ python ${P2C}/pocket-to-concavity.py -h
+usage: pocket shapeup [-h] -m METHOD -p PROTEIN [-l LIGAND] [-d DISTANCE]
+                      [-r RANK]
 
+optional arguments:
+  -h, --help            show this help message and exit
+  -m METHOD, --method METHOD
+                        select mode (LF, LB)
+  -p PROTEIN, --protein PROTEIN
+                        specify protein file (format:PDB)
+  -l LIGAND, --ligand LIGAND
+                        specify ligand file (format:PDB). Only use this
+                        argument when you select "LB" mode.
+  -d DISTANCE, --distance DISTANCE
+                        specify distance of include pocket. Only use this
+                        argument when you select "LB".
+  -r RANK, --rank RANK  specify druggability rank by fpocket of include
+                        pocket. Only use this argument when you select "LF".
 ~~~
-python ${P2C}/pocket_.py -h
+
+### **example of LF mode**
 ~~~
+python ${P2C}/pocket-to-concavity.py -m LF -p protein.pdb -r 1
+~~~
+
+### **example of LB mode**
+~~~
+python ${P2C}/pocket-to-concavity.py -m LB -p protein.pdb -l ligand.pdb -d 3.0
+~~~
+
+## Output files
+All output files are stored in ```./fpoc_output/``` or ```p2c_output```.  
+```fpoc_output``` contains the results of fpocket calculation.  
+```p2c_output``` contains the files in follows.  
+* **default_pocket.pqr**: alpha-spheres before elimination process
+* **newshape_pocket.pqr**: alpha-spheres after elimination process
+* **visual_lf.pse**: pymol session file of LF mode results  
+In LB mode, additional output files are stored in this directory.  
+* **lig_lat.pdb**: lattice representation of the ligand
+* **poc_lat.pdb**: lattice representation of the newshape_pocket
+* **poc_surp.pdb**: lattice of "(poc_lat.pdb)-(lig_lat.pdb)"
+* **poc_next.pqr**: alpha-spheres that not overlapped to the ligand
+* **cluster/**: DBSCAN clustering results of "poc_next.pqr"
+* **visual_lb.pse**: pymol session file of LB mode results 
+
+## visualization
 
 
 
