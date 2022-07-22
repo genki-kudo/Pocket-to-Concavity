@@ -1,4 +1,5 @@
 # Pocket-to-Concavity(P2C)
+![図1](https://user-images.githubusercontent.com/96423408/180365403-939d72f2-3268-4398-8ec7-b33bd0732c14.png)
 P2C is a tool to accurately detect concavity that bind to the active compound in the pocket predicted by fpocket. 
 There are two main modes, Ligand-Free(LF) mode and Ligand-Bound(LB) mode. 
 
