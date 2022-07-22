@@ -11,10 +11,11 @@ def fpoc_lf(protein, pro_name, rank, outdir):
     with open(defpoc,'a')as dpoc:
         with open(inipoc, 'r')as inp:
             for line in inp:
-                if line[0:6]=="ATOM  " and int(line[22:28])<=int(rank):
-                    print(line, end='', file=dpoc)
-                elif int(line[22:28])>int(rank):
-                    break
+                if line[0:6]=="ATOM  ":
+                    if int(line[22:28])<=int(rank):
+                        print(line, end='', file=dpoc)
+                    elif int(line[22:28])>int(rank):
+                        break
     return defpoc
 
 def fpoc_lb(protein, pro_name, ligand, distance, outdir):
