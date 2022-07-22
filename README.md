@@ -16,16 +16,16 @@ You can use P2C if you have protein structure file(.pdb) or complex structure fi
 * **fpocket**  
   You can install it according to fpocket github.(https://github.com/Discngine/fpocket)  
   ~~~
-  git clone https://github.com/Discngine/fpocket.git
-  cd fpocket
-  make
-  sudo make install
+  $ git clone https://github.com/Discngine/fpocket.git
+  $ cd fpocket
+  $ make
+  $ sudo make install
   ~~~
   If you try to install fpocket in new linux distributions, you can have an error during ```make```. In that case, change ```$(LINKER) $(LFLAGS) $^ -o $@``` the makefile to ```$(LINKER) $^ -o $@ $(LFLAGS)```. More detail of the error is referred in https://sourceforge.net/p/fpocket/mailman/message/28785185/.  
   
   set PATH in this fpocket directory.  
   ~~~
-  export PATH=$PATH:/path/to/fpocket/directory
+  $ export PATH=$PATH:/path/to/fpocket/directory
   ~~~
   
   We tested P2C on fpocket2.
@@ -41,8 +41,8 @@ You can use P2C if you have protein structure file(.pdb) or complex structure fi
 ## Installation
 Download this source code from github, and set PATH in this directory.  
 ~~~
-git clone https://github.com/genki-kudo/Pocket-to-Concavity  
-export P2C=/path/to/source/directory
+$ git clone https://github.com/genki-kudo/Pocket-to-Concavity  
+$ export P2C=/path/to/source/directory
 ~~~
 
 ## Preparation of input files
@@ -77,21 +77,22 @@ optional arguments:
 
 ### **example of LF mode**
 ~~~
-python ${P2C}/pocket-to-concavity.py -m LF -p protein.pdb -r 1
+$ python ${P2C}/pocket-to-concavity.py -m LF -p protein.pdb -r 1
 ~~~
 
 ### **example of LB mode**
 ~~~
-python ${P2C}/pocket-to-concavity.py -m LB -p protein.pdb -l ligand.pdb -d 3.0
+$ python ${P2C}/pocket-to-concavity.py -m LB -p protein.pdb -l ligand.pdb -d 3.0
 ~~~
 
 ## Output files
-All output files are stored in ```./fpoc_output/``` or ```p2c_output```.  
+All output files are stored in ```./fpoc_output/``` or ```./p2c_output/```.  
 ```fpoc_output``` contains the results of fpocket calculation.  
 ```p2c_output``` contains the files in follows.  
 * **default_pocket.pqr**: alpha-spheres before elimination process
 * **newshape_pocket.pqr**: alpha-spheres after elimination process
 * **visual_lf.pse**: pymol session file of LF mode results  
+
 In LB mode, additional output files are stored in this directory.  
 * **lig_lat.pdb**: lattice representation of the ligand
 * **poc_lat.pdb**: lattice representation of the newshape_pocket
@@ -101,6 +102,14 @@ In LB mode, additional output files are stored in this directory.
 * **visual_lb.pse**: pymol session file of LB mode results 
 
 ## visualization
+You can view the results of P2C if the process terminated successfully.  
+~~~
+$ pymol visual_lf.pse
+~~~
+or
+~~~
+$ pymol visual_lb.pse
+~~~
 
 
 
