@@ -1,22 +1,36 @@
 # Pocket-to-Concavity(P2C)
 ![図1](https://user-images.githubusercontent.com/96423408/180365403-939d72f2-3268-4398-8ec7-b33bd0732c14.png)
+
 P2C is a tool to accurately detect concavity that bind to the active compound in the pocket predicted by fpocket. 
 There are two main modes, Ligand-Free(LF) mode and Ligand-Bound(LB) mode. 
 
-* **Ligand-Free(LF) mode**  
+### **Ligand-Free(LF) mode**  
   For the hit compound identification process, this mode can use to correct pockets more clearly.  
   
-* **Ligand-Bound(LB) mode**  
+### **Ligand-Bound(LB) mode**  
   For lead optimization of known compounds, this mode can guide the direction of functional group expansion.  
   
 You can use P2C if you have protein structure file(.pdb) or complex structure file(.pdb). 
 
 ## Requirements
-* fpocket  
+* **fpocket**  
   You can install it according to fpocket github.(https://github.com/Discngine/fpocket)  
+  ~~~
+  git clone https://github.com/Discngine/fpocket.git
+  cd fpocket
+  make
+  sudo make install
+  ~~~
+  If you try to install fpocket in new linux distributions, you can have an error during ```make```. In that case, change ```$(LINKER) $(LFLAGS) $^ -o $@``` the makefile to ```$(LINKER) $^ -o $@ $(LFLAGS)```. More detail of the error is referred in https://sourceforge.net/p/fpocket/mailman/message/28785185/.  
+  
+  set PATH in this fpocket directory.  
+  ~~~
+  export PATH=$PATH:/path/to/fpocket/directory
+  ~~~
+  
   We tested P2C on fpocket2.
 
-* python  
+* **python**  
   We tested P2C on python3.7.10  
   Several modules are needed.
   * numpy(1.21.2)
@@ -41,7 +55,7 @@ export P2C=/path/to/source/directory
 ## Running
 
 ~~~
-python ${P2C}/pocket_shapeup.py -h
+python ${P2C}/pocket_.py -h
 ~~~
 
 
