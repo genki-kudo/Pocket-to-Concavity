@@ -61,12 +61,12 @@ def appr(xxx):
     else:
         return '{:7.03f}'.format(xxx + 0.5)
         
-def lat_gen(inputname, column, outputname):
+def lat_gen(inputname, outputname):
     t_file('lat.pdb')
     p_num = 0
     with open(inputname,'r')as poc:
         for line in poc:
-            if line[0:6] == column:
+            if line[0:6] == 'ATOM  ' or line[0:6] == 'HETATM':
                 p_num += 1
                 num_pdb = '{:5}'.format(p_num)
                 lxi = math.modf(float(line[31:38]))[1]
