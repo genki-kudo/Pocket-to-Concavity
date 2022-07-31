@@ -89,7 +89,7 @@ def clus_poc(clustering, next, outdir):
     elif clustering == 'N' or clustering == 'fpocket-clustering':
         #choose the second clustering of fpocket-clustering-method
         #it is the cnetroid linkage clustering
-        print("fpoc-clustering start")
+        #print("fpoc-clustering start")
         second_thre = 4.5
         POINTS = []
         with open(next,'r')as inp:
