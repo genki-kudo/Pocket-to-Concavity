@@ -42,7 +42,7 @@ You can use P2C if you have protein structure file(.pdb) or complex structure fi
 Download this source code from github, and set PATH in this directory.  
 ~~~
 $ git clone https://github.com/genki-kudo/Pocket-to-Concavity  
-$ export P2C=/path/to/source/directory
+$ export PATH=$PATH:/path/to/source/directory
 ~~~
 
 ## Preparation of input files
@@ -55,7 +55,7 @@ $ export P2C=/path/to/source/directory
 ## Running
 To view options of P2C:
 ~~~
-$ python ${P2C}/pocket-to-concavity.py -h
+$ p2c -h
 usage: pocket shapeup [-h] -m METHOD -p PROTEIN [-l LIGAND] [-d DISTANCE]
                       [-r RANK]
 
@@ -77,12 +77,12 @@ optional arguments:
 
 ### **example of LF mode**
 ~~~
-$ python ${P2C}/pocket-to-concavity.py -m LF -p protein.pdb -r 1
+$ p2c -m LF -p protein.pdb -r 1
 ~~~
 
 ### **example of LB mode**
 ~~~
-$ python ${P2C}/pocket-to-concavity.py -m LB -p protein.pdb -l ligand.pdb -d 3.0
+$ p2c -m LB -p protein.pdb -l ligand.pdb -d 3.0
 ~~~
 
 ## Output files
