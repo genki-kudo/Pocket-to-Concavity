@@ -78,7 +78,6 @@ def dist_cf(vec_a, vec_b, d_min):
 
 #truncated file  
 def t_file(filename):
-    bash('touch '+filename)
     with open(filename,'w')as file:
         file.truncate(0)
 
@@ -133,5 +132,5 @@ def lat_gen(inputname, outputname):
         one_z = '{:7.03f}'.format(float(item[2]))
         with open (outputname,'a')as poc:
             print('HETATM'+num_pdb+'      PLA A   1     '+one_x+' '+one_y+' '+one_z+'  1.00 10.00           H', file=poc)
-    #bash('rm lat.pdb')
+    bash('rm lat.pdb')
     bash('rm lat_ex.txt')
