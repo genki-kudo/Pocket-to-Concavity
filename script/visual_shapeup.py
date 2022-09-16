@@ -9,9 +9,11 @@ def visual_lb(protein, ligand, outdir):
     clsname = glob.glob('./'+outdir+'/cluster/*.pqr')
     for cls in clsname:
         cmd.load(cls)
-        with open(cls,'r')as clfi:
-            number = os.path.splitext(os.path.basename(cls))[0][7:]
-            cmd.color(int(number)+2, os.path.splitext(os.path.basename(cls))[0]) 
+        number = os.path.splitext(os.path.basename(cls))[0][7:]
+        cmd.color(int(number)+2, os.path.splitext(os.path.basename(cls))[0]) 
+        cmd.show("mesh", os.path.splitext(os.path.basename(cls))[0])
+        cmd.show("spheres", os.path.splitext(os.path.basename(cls))[0])
+        cmd.hide("sticks", os.path.splitext(os.path.basename(cls))[0])
 
     cmd.set("sphere_scale", "0.3")
     cmd.bg_color("white")
