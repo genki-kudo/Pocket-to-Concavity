@@ -45,7 +45,7 @@ def next_poc(nshape, ligand, outdir):
                 break
         if check == 0:
             num += 1
-        pro.append(l)
+            pro.append(l)
     tmp=open(next,"w").writelines(pro)
     return next
 
