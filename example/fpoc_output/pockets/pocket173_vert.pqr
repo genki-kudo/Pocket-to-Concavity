@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   174:
+HEADER 0  - Pocket Score                      : -2.2742
+HEADER 1  - Drug Score                        : 0.0088
+HEADER 2  - Number of V. Vertices             :    17
+HEADER 3  - Mean alpha-sphere radius          : 4.1627
+HEADER 4  - Mean alpha-sphere SA              : 0.7203
+HEADER 5  - Mean B-factor                     : 0.3813
+HEADER 6  - Hydrophobicity Score              : 16.6667
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 539.7665
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 4.0000
+HEADER 12 - Number of apolar alpha sphere     :     5
+HEADER 13 - Proportion of apolar alpha sphere : 0.2941
+ATOM   3878  POL STP   174      17.002  -9.417 -18.844    0.00     5.15
+ATOM   3879 APOL STP   174      14.852  -7.363 -19.345    0.00     3.33
+ATOM   5370  POL STP   174      14.903  -7.734 -19.403    0.00     3.52
+ATOM   4178 APOL STP   174      14.841  -7.338 -19.348    0.00     3.32
+ATOM   7717 APOL STP   174      14.793  -7.342 -19.386    0.00     3.31
+ATOM   4178 APOL STP   174      14.771  -7.248 -19.254    0.00     3.19
+ATOM   3878  POL STP   174      16.948  -7.426 -18.788    0.00     3.78
+ATOM   3879  POL STP   174      16.172  -6.707 -18.970    0.00     3.12
+ATOM   4178 APOL STP   174      14.841  -7.337 -19.347    0.00     3.32
+ATOM   7717  POL STP   174      14.693  -7.491 -19.502    0.00     3.36
+ATOM   5370  POL STP   174      14.216 -10.134 -18.375    0.00     4.23
+ATOM   7684  POL STP   174      14.863 -10.956 -18.224    0.00     5.04
+ATOM   7683  POL STP   174      14.439 -10.566 -17.688    0.00     4.41
+ATOM   7684  POL STP   174      16.306 -11.278 -18.438    0.00     5.92
+ATOM   7684  POL STP   174      14.750 -11.293 -18.324    0.00     5.10
+ATOM  10918  POL STP   174      17.055 -13.126 -17.043    0.00     4.89
+ATOM  10921  POL STP   174      17.574 -10.793 -17.073    0.00     5.80
+TER
+END

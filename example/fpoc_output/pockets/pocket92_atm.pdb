@@ -1,0 +1,34 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    93:
+HEADER 0  - Pocket Score                      : 0.2282
+HEADER 1  - Drug Score                        : 0.0164
+HEADER 2  - Number of V. Vertices             :    15
+HEADER 3  - Mean alpha-sphere radius          : 4.2854
+HEADER 4  - Mean alpha-sphere SA              : 0.6409
+HEADER 5  - Mean B-factor                     : 0.3724
+HEADER 6  - Hydrophobicity Score              : 26.8333
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.6667
+HEADER 9  - Real volume (approximation)       : 337.8056
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     0
+HEADER 13 - Proportion of apolar alpha sphere : 0.0000
+ATOM     16   CA SER A   9     -22.041  11.685 -28.458  1.00 35.03           C 0
+ATOM     11    O PRO A   8     -23.518  12.650 -30.569  1.00 36.95           O 0
+ATOM     15    N SER A   9     -21.504  12.290 -29.672  1.00 35.65           N 0
+ATOM      4    O THR A   7     -22.505  11.316 -33.307  1.00 39.35           O 0
+ATOM   2184  OXT LEU B 157     -19.996   8.037 -29.645  1.00 15.62           O 0
+ATOM     27  OD1 ASP A  10     -25.907  11.035 -26.095  1.00 36.53           O 0
+ATOM     21    N ASP A  10     -23.651  12.475 -26.839  1.00 31.90           N 0
+ATOM   1123   CE LYS B  11     -20.992   4.844 -31.318  1.00 28.52           C 0
+ATOM   1124   NZ LYS B  11     -21.861   3.745 -30.690  1.00 25.74           N 0
+ATOM     20   OG SER A   9     -21.486  10.366 -26.494  1.00 36.18           O 0
+ATOM     36   CE LYS A  11     -23.929   7.177 -23.186  1.00 30.39           C 0
+ATOM     19   CB SER A   9     -20.980  10.874 -27.726  1.00 35.32           C 0
+ATOM     34   CG LYS A  11     -22.407   9.058 -23.721  1.00 27.99           C 0
+TER
+END

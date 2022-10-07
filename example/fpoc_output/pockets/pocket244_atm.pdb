@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   245:
+HEADER 0  - Pocket Score                      : -4.2667
+HEADER 1  - Drug Score                        : 0.0408
+HEADER 2  - Number of V. Vertices             :    17
+HEADER 3  - Mean alpha-sphere radius          : 4.1479
+HEADER 4  - Mean alpha-sphere SA              : 0.6662
+HEADER 5  - Mean B-factor                     : 0.8014
+HEADER 6  - Hydrophobicity Score              : 45.0000
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 4.5000
+HEADER 9  - Real volume (approximation)       : 441.2017
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 7.0000
+HEADER 12 - Number of apolar alpha sphere     :     8
+HEADER 13 - Proportion of apolar alpha sphere : 0.4706
+ATOM   2358    N LEU C  36     -26.963  -2.376 -14.143  1.00 65.37           N 0
+ATOM   2363   CG LEU C  36     -27.492  -0.019 -16.528  1.00 65.60           C 0
+ATOM   2359   CA LEU C  36     -27.624  -2.501 -15.438  1.00 65.33           C 0
+ATOM   2365  CD2 LEU C  36     -28.900   0.130 -17.112  1.00 66.05           C 0
+ATOM   2356    O ALA C  35     -28.152  -4.017 -13.127  1.00 65.12           O 0
+ATOM   2353    N ALA C  35     -26.576  -2.013 -11.025  1.00 65.99           N 0
+ATOM   2355    C ALA C  35     -27.210  -3.209 -13.132  1.00 65.41           C 0
+ATOM    837  OE1 GLN A 125     -26.857   5.256 -11.218  1.00 25.51           O 0
+ATOM   2349   CA ASN C  34     -26.163  -0.187  -9.416  1.00 65.70           C 0
+ATOM    376   CG LEU A  55     -24.021   2.547 -13.696  1.00 20.87           C 0
+ATOM    377  CD1 LEU A  55     -23.986   1.202 -14.490  1.00 21.04           C 0
+ATOM   2350    C ASN C  34     -25.655  -1.245 -10.430  1.00 65.95           C 0
+ATOM   2348    N ASN C  34     -26.899  -0.779  -8.292  1.00 65.32           N 0
+ATOM   2341    O ARG C  32     -27.949  -3.848  -8.232  1.00 62.44           O 0
+ATOM    378  CD2 LEU A  55     -23.286   2.393 -12.378  1.00 19.90           C 0
+ATOM   2352   CB ASN C  34     -25.002   0.681  -8.886  1.00 65.65           C 0
+TER
+END

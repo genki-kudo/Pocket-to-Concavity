@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   103:
+HEADER 0  - Pocket Score                      : -0.2434
+HEADER 1  - Drug Score                        : 0.0211
+HEADER 2  - Number of V. Vertices             :    20
+HEADER 3  - Mean alpha-sphere radius          : 4.2517
+HEADER 4  - Mean alpha-sphere SA              : 0.6863
+HEADER 5  - Mean B-factor                     : 0.5546
+HEADER 6  - Hydrophobicity Score              : 33.1667
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.6667
+HEADER 9  - Real volume (approximation)       : 284.0684
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     3
+HEADER 13 - Proportion of apolar alpha sphere : 0.1500
+ATOM   1570    O CYS B  69      17.801  -7.328  -7.212  1.00 45.93           O 0
+ATOM   1577   CB PRO B  70      20.572  -6.921 -10.269  1.00 47.95           C 0
+ATOM   1812   CB ALA B 111      16.623 -15.289  -8.374  1.00 32.76           C 0
+ATOM   1569    C CYS B  69      17.538  -7.155  -8.413  1.00 45.97           C 0
+ATOM   1567    N CYS B  69      15.567  -8.608  -8.684  1.00 42.89           N 0
+ATOM   1573    N PRO B  70      18.442  -6.804  -9.337  1.00 47.28           N 0
+ATOM   1557    O GLN B  67      15.398 -11.062 -11.709  1.00 36.93           O 0
+ATOM   1574   CA PRO B  70      19.803  -6.406  -9.044  1.00 47.67           C 0
+ATOM   1809   CA ALA B 111      15.653 -14.463  -7.523  1.00 33.11           C 0
+ATOM   1579   CD PRO B  70      18.213  -6.951 -10.795  1.00 47.42           C 0
+ATOM   1578   CG PRO B  70      19.586  -6.798 -11.404  1.00 47.97           C 0
+ATOM   1564   CA GLY B  68      14.290 -10.562  -9.195  1.00 39.82           C 0
+ATOM   1808    N ALA B 111      15.846 -14.785  -6.117  1.00 32.75           N 0
+ATOM   1813    N LYS B 112      13.194 -14.281  -7.255  1.00 32.54           N 0
+TER
+END

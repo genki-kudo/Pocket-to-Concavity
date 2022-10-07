@@ -1,0 +1,33 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   240:
+HEADER 0  - Pocket Score                      : -4.1022
+HEADER 1  - Drug Score                        : 0.0276
+HEADER 2  - Number of V. Vertices             :    11
+HEADER 3  - Mean alpha-sphere radius          : 4.3575
+HEADER 4  - Mean alpha-sphere SA              : 0.8618
+HEADER 5  - Mean B-factor                     : 0.7245
+HEADER 6  - Hydrophobicity Score              : 40.0000
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 371.4900
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     3
+HEADER 13 - Proportion of apolar alpha sphere : 0.2727
+ATOM  12203  POL STP   240     -19.350 -15.359   3.885    0.00     5.01
+ATOM  14026  POL STP   240     -19.259 -15.064   4.668    0.00     5.71
+ATOM  12203 APOL STP   240     -18.614 -15.879   2.642    0.00     3.68
+ATOM   7355 APOL STP   240     -20.823 -15.936   4.419    0.00     5.62
+ATOM   8794  POL STP   240     -21.146 -16.588   2.883    0.00     4.60
+ATOM   8794  POL STP   240     -21.733 -17.112   2.527    0.00     4.67
+ATOM   7358  POL STP   240     -21.345 -16.603   1.156    0.00     3.42
+ATOM   8794  POL STP   240     -21.354 -16.713   1.319    0.00     3.60
+ATOM   8794  POL STP   240     -21.351 -16.710   1.320    0.00     3.59
+ATOM  12203  POL STP   240     -19.958 -15.893   3.177    0.00     4.44
+ATOM  12203 APOL STP   240     -18.652 -15.937   2.554    0.00     3.60
+TER
+END

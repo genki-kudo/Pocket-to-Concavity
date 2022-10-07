@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    88:
+HEADER 0  - Pocket Score                      : 0.3936
+HEADER 1  - Drug Score                        : 0.0352
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.8766
+HEADER 4  - Mean alpha-sphere SA              : 0.5405
+HEADER 5  - Mean B-factor                     : 0.2318
+HEADER 6  - Hydrophobicity Score              : 39.2857
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.8571
+HEADER 9  - Real volume (approximation)       : 436.7336
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 19.0000
+HEADER 12 - Number of apolar alpha sphere     :    20
+HEADER 13 - Proportion of apolar alpha sphere : 0.6250
+ATOM    649  CG1 VAL A  91     -18.448   8.644   0.952  1.00 23.25           C 0
+ATOM    579  NH1 ARG A  82     -23.137   8.825  -4.937  1.00 39.78           N 0
+ATOM    650  CG2 VAL A  91     -19.525  10.705   1.902  1.00 24.70           C 0
+ATOM    576   CD ARG A  82     -20.912  10.507  -4.505  1.00 27.70           C 0
+ATOM    648   CB VAL A  91     -18.514  10.163   0.875  1.00 24.25           C 0
+ATOM    577   NE ARG A  82     -22.304  10.946  -4.683  1.00 33.43           N 0
+ATOM    593   CB ALA A  84     -24.114  13.517  -2.522  1.00 16.78           C 0
+ATOM    614  CD2 TYR A  87     -22.971  12.305   2.790  1.00 26.46           C 0
+ATOM    578   CZ ARG A  82     -23.343  10.133  -4.882  1.00 36.41           C 0
+ATOM    574   CB ARG A  82     -18.583  11.386  -3.945  1.00 21.44           C 0
+ATOM    666  CD2 LEU A  93     -18.034   7.211  -3.973  1.00  9.41           C 0
+ATOM    573    O ARG A  82     -18.555  13.105  -1.519  1.00 21.28           O 0
+ATOM    575   CG ARG A  82     -19.993  11.740  -4.356  1.00 23.40           C 0
+ATOM    589    N ALA A  84     -22.040  14.809  -2.459  1.00 18.31           N 0
+ATOM    610    O TYR A  87     -22.894  15.184   0.885  1.00 22.36           O 0
+ATOM    631    O THR A  89     -19.322  14.510   1.408  1.00 22.51           O 0
+ATOM    580  NH2 ARG A  82     -24.581  10.625  -5.020  1.00 33.45           N 0
+ATOM    611   CB TYR A  87     -24.952  13.587   1.841  1.00 21.01           C 0
+ATOM    605   CB SER A  86     -28.598  14.041  -0.832  1.00 20.66           C 0
+TER
+END

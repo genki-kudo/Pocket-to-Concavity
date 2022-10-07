@@ -1,0 +1,45 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    26:
+HEADER 0  - Pocket Score                      : 6.2168
+HEADER 1  - Drug Score                        : 0.0114
+HEADER 2  - Number of V. Vertices             :    38
+HEADER 3  - Mean alpha-sphere radius          : 4.4165
+HEADER 4  - Mean alpha-sphere SA              : 0.6687
+HEADER 5  - Mean B-factor                     : 0.1463
+HEADER 6  - Hydrophobicity Score              : -14.1111
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Volume Score                      : 3.4444
+HEADER 9  - Real volume (approximation)       : 549.7207
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 3.0000
+HEADER 12 - Number of apolar alpha sphere     :     4
+HEADER 13 - Proportion of apolar alpha sphere : 0.1053
+ATOM   1641  CG2 THR B  79       4.335   8.476 -23.954  1.00 13.99           C 0
+ATOM   1009  OE1 GLU A 146       8.556  12.805 -21.365  1.00 42.10           O 0
+ATOM   2006  OE2 GLU B 135       8.032   5.375 -29.321  1.00 28.92           O 0
+ATOM   1743  OD1 ASN B  92       4.804  11.848 -24.521  1.00 25.54           O 0
+ATOM   2005  OE1 GLU B 135       6.469   6.839 -29.541  1.00 26.31           O 0
+ATOM   1640  OG1 THR B  79       5.342   7.340 -22.081  1.00 13.98           O 0
+ATOM   1728   CE LYS B  90       6.056  10.047 -30.114  1.00 25.64           C 0
+ATOM   1639   CB THR B  79       4.718   7.118 -23.340  1.00 14.02           C 0
+ATOM   2004   CD GLU B 135       6.841   5.703 -29.224  1.00 23.71           C 0
+ATOM   1655   OG SER B  81       3.624   9.819 -27.065  1.00 14.37           O 0
+ATOM   1729   NZ LYS B  90       6.757   8.985 -30.894  1.00 23.00           N 0
+ATOM   1623  OG1 THR B  77       8.952   4.524 -20.693  1.00 14.77           O 0
+ATOM   2010    O ILE B 136       9.625   1.996 -25.195  1.00 15.92           O 0
+ATOM   2019   CB ASN B 137      11.764   2.832 -21.672  1.00 18.55           C 0
+ATOM   2016   CA ASN B 137      11.336   2.085 -22.946  1.00 18.68           C 0
+ATOM   2015    N ASN B 137       9.878   1.931 -22.963  1.00 18.24           N 0
+ATOM   2002   CB GLU B 135       6.354   4.037 -27.399  1.00 19.33           C 0
+ATOM   2001    O GLU B 135       5.447   3.401 -24.333  1.00 17.73           O 0
+ATOM   2009    C ILE B 136       9.156   1.908 -24.078  1.00 17.49           C 0
+ATOM   1638    O THR B  79       3.111   5.641 -25.387  1.00 14.35           O 0
+ATOM   2003   CG GLU B 135       5.833   4.688 -28.677  1.00 20.64           C 0
+ATOM   2008   CA ILE B 136       7.669   1.716 -23.890  1.00 17.81           C 0
+ATOM   2000    C GLU B 135       5.957   2.796 -25.287  1.00 18.35           C 0
+ATOM   2007    N ILE B 136       6.992   1.966 -25.163  1.00 18.32           N 0
+TER
+END

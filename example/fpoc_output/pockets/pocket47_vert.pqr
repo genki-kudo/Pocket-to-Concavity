@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    48:
+HEADER 0  - Pocket Score                      : 2.6470
+HEADER 1  - Drug Score                        : 0.0082
+HEADER 2  - Number of V. Vertices             :    22
+HEADER 3  - Mean alpha-sphere radius          : 3.8062
+HEADER 4  - Mean alpha-sphere SA              : 0.5442
+HEADER 5  - Mean B-factor                     : 0.1801
+HEADER 6  - Hydrophobicity Score              : 5.4286
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.7143
+HEADER 9  - Real volume (approximation)       : 198.9540
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     0
+HEADER 13 - Proportion of apolar alpha sphere : 0.0000
+ATOM  19156  POL STP    48       5.269   3.899 -32.948    0.00     3.45
+ATOM  19181  POL STP    48       6.601   4.306 -33.097    0.00     4.12
+ATOM  14779  POL STP    48       6.859   4.519 -33.359    0.00     4.29
+ATOM  14788  POL STP    48       7.290   5.319 -33.725    0.00     4.47
+ATOM  19181  POL STP    48       6.816   4.477 -33.304    0.00     4.26
+ATOM  14788  POL STP    48       8.032   5.657 -34.118    0.00     4.81
+ATOM  14791  POL STP    48       7.402   5.632 -33.666    0.00     4.40
+ATOM  14779  POL STP    48       5.045   4.303 -33.744    0.00     3.33
+ATOM  14788  POL STP    48       5.710   5.158 -34.078    0.00     3.43
+ATOM  19156  POL STP    48       5.040   4.301 -33.748    0.00     3.33
+ATOM  19158  POL STP    48       5.043   4.302 -33.744    0.00     3.33
+ATOM  14791  POL STP    48       7.293   5.520 -33.636    0.00     4.38
+ATOM  14791  POL STP    48       7.218   5.723 -33.561    0.00     4.24
+ATOM  19181  POL STP    48       7.042   5.302 -33.311    0.00     4.11
+ATOM  19163  POL STP    48       4.498   3.480 -31.557    0.00     3.40
+ATOM  19181  POL STP    48       5.804   3.954 -32.237    0.00     3.64
+ATOM  19163  POL STP    48       4.212   3.463 -31.358    0.00     3.36
+ATOM  19163  POL STP    48       4.347   3.341 -31.395    0.00     3.38
+ATOM  19163  POL STP    48       4.212   3.460 -31.356    0.00     3.36
+ATOM  19992  POL STP    48       4.130   3.932 -31.028    0.00     3.00
+ATOM  19181  POL STP    48       6.776   4.285 -33.146    0.00     4.17
+ATOM  19181  POL STP    48       6.634   3.370 -31.789    0.00     3.47
+TER
+END

@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   208:
+HEADER 0  - Pocket Score                      : -3.0760
+HEADER 1  - Drug Score                        : 0.0692
+HEADER 2  - Number of V. Vertices             :    24
+HEADER 3  - Mean alpha-sphere radius          : 3.5979
+HEADER 4  - Mean alpha-sphere SA              : 0.4429
+HEADER 5  - Mean B-factor                     : 0.5495
+HEADER 6  - Hydrophobicity Score              : 49.2727
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.2727
+HEADER 9  - Real volume (approximation)       : 361.2198
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 6.0000
+HEADER 12 - Number of apolar alpha sphere     :     7
+HEADER 13 - Proportion of apolar alpha sphere : 0.2917
+ATOM   2242    O ASN C  19     -19.301 -11.337  -3.298  1.00 45.66           O 0
+ATOM   2280    O GLN C  25     -15.837 -15.192  -5.229  1.00 47.35           O 0
+ATOM   3099   CB PHE C 144     -16.045  -9.496  -2.127  1.00 44.33           C 0
+ATOM   2266    O ALA C  22     -17.612 -15.019  -0.797  1.00 49.73           O 0
+ATOM   3086  CD2 LEU C 142     -13.644 -11.979  -5.365  1.00 30.16           C 0
+ATOM   3082    O LEU C 142     -10.983 -10.790  -1.340  1.00 36.97           O 0
+ATOM   3055    O PRO C 139     -11.090 -15.228  -3.003  1.00 30.28           O 0
+ATOM   3084   CG LEU C 142     -12.535 -11.095  -4.823  1.00 32.15           C 0
+ATOM   3083   CB LEU C 142     -11.420 -11.964  -4.247  1.00 33.98           C 0
+ATOM   2277    N GLN C  25     -15.062 -17.493  -4.199  1.00 48.55           N 0
+ATOM   2273    N GLY C  24     -15.185 -17.804  -1.356  1.00 49.60           N 0
+ATOM   2287   CA LEU C  26     -15.944 -14.692  -7.976  1.00 45.63           C 0
+ATOM   2292  CD1 LEU C  26     -15.177 -11.733  -8.814  1.00 42.73           C 0
+ATOM   2238   CB ALA C  18     -17.731  -9.369  -7.209  1.00 36.64           C 0
+ATOM   2294    N GLN C  27     -18.336 -14.331  -8.175  1.00 44.88           N 0
+ATOM   2267   CB ALA C  22     -19.748 -14.884  -3.058  1.00 49.77           C 0
+ATOM   2239    N ASN C  19     -20.518 -10.513  -5.948  1.00 41.44           N 0
+ATOM   3062    O ASP C 140      -8.312 -14.609  -0.146  1.00 32.36           O 0
+TER
+END

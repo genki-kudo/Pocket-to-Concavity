@@ -1,0 +1,33 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    83:
+HEADER 0  - Pocket Score                      : 0.5618
+HEADER 1  - Drug Score                        : 0.2360
+HEADER 2  - Number of V. Vertices             :    13
+HEADER 3  - Mean alpha-sphere radius          : 3.2074
+HEADER 4  - Mean alpha-sphere SA              : 0.4524
+HEADER 5  - Mean B-factor                     : 0.0592
+HEADER 6  - Hydrophobicity Score              : 69.1429
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 5.7143
+HEADER 9  - Real volume (approximation)       : 31.4079
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 10.0000
+HEADER 12 - Number of apolar alpha sphere     :    11
+HEADER 13 - Proportion of apolar alpha sphere : 0.8462
+ATOM   1404    N LEU B  48      -1.614   4.371 -34.969  1.00 17.36           N 0
+ATOM   1409   CG LEU B  48      -3.701   2.514 -33.664  1.00 17.66           C 0
+ATOM   1390    O ASN B  46       2.321   2.389 -33.924  1.00 18.85           O 0
+ATOM   2148  CE1 PHE B 152      -1.443   2.871 -30.566  1.00  8.62           C 0
+ATOM   2146  CD1 PHE B 152      -1.527   1.522 -30.206  1.00  9.17           C 0
+ATOM   1397    C GLN B  47      -0.660   3.968 -35.810  1.00 17.45           C 0
+ATOM   1245   CB TRP B  28       0.818  -2.160 -33.089  1.00 16.01           C 0
+ATOM   1366  CD1 LEU B  43      -0.562   0.288 -36.518  1.00 18.78           C 0
+ATOM   1246   CG TRP B  28       1.177  -1.463 -31.813  1.00 15.78           C 0
+ATOM   1247  CD1 TRP B  28       1.862  -0.285 -31.666  1.00 16.01           C 0
+ATOM   1160  CG2 VAL B  16      -2.800  -1.820 -32.098  1.00 12.73           C 0
+ATOM   1411  CD2 LEU B  48      -4.146   1.429 -34.679  1.00 17.55           C 0
+TER
+END

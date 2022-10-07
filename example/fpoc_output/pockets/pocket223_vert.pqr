@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   224:
+HEADER 0  - Pocket Score                      : -3.6617
+HEADER 1  - Drug Score                        : 0.0432
+HEADER 2  - Number of V. Vertices             :    13
+HEADER 3  - Mean alpha-sphere radius          : 4.9027
+HEADER 4  - Mean alpha-sphere SA              : 0.8082
+HEADER 5  - Mean B-factor                     : 0.6272
+HEADER 6  - Hydrophobicity Score              : 46.0000
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 3.3333
+HEADER 9  - Real volume (approximation)       : 497.9593
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     0
+HEADER 13 - Proportion of apolar alpha sphere : 0.0000
+ATOM  14008  POL STP   224     -18.143  -8.050   3.400    0.00     4.33
+ATOM  14008  POL STP   224     -18.538  -7.911   3.147    0.00     4.17
+ATOM  14010  POL STP   224     -15.818  -9.597   2.903    0.00     4.53
+ATOM  14014  POL STP   224     -16.000  -9.987   1.549    0.00     3.71
+ATOM  14029  POL STP   224     -14.925 -10.217   3.324    0.00     5.33
+ATOM  14027  POL STP   224     -15.188 -10.393   2.321    0.00     4.62
+ATOM  14029  POL STP   224     -14.825 -10.304   3.326    0.00     5.40
+ATOM  14036  POL STP   224     -14.537 -11.627   2.408    0.00     5.23
+ATOM   7060  POL STP   224     -13.434  -9.274   3.171    0.00     4.91
+ATOM   7060  POL STP   224     -13.493  -9.408   3.317    0.00     5.08
+ATOM   7064  POL STP   224     -13.212  -9.846   3.879    0.00     5.75
+ATOM  14029  POL STP   224     -14.739 -10.349   3.484    0.00     5.55
+ATOM  14036  POL STP   224     -14.593 -12.034   2.101    0.00     5.14
+TER
+END

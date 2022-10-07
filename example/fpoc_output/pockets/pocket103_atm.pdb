@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   104:
+HEADER 0  - Pocket Score                      : -0.3041
+HEADER 1  - Drug Score                        : 0.0360
+HEADER 2  - Number of V. Vertices             :    22
+HEADER 3  - Mean alpha-sphere radius          : 3.7263
+HEADER 4  - Mean alpha-sphere SA              : 0.4723
+HEADER 5  - Mean B-factor                     : 0.3167
+HEADER 6  - Hydrophobicity Score              : 38.8000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.7000
+HEADER 9  - Real volume (approximation)       : 253.2258
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 3.0000
+HEADER 12 - Number of apolar alpha sphere     :     4
+HEADER 13 - Proportion of apolar alpha sphere : 0.1818
+ATOM   2518   OH TYR C  56     -23.947  -7.838 -29.030  1.00 28.90           O 0
+ATOM   3183   CB ALA C 156     -23.914  -3.101 -28.168  1.00 21.39           C 0
+ATOM   2517   CZ TYR C  56     -22.747  -7.294 -28.599  1.00 28.01           C 0
+ATOM   2516  CE2 TYR C  56     -21.671  -7.331 -29.452  1.00 26.54           C 0
+ATOM   2489    O GLU C  53     -23.803  -7.672 -33.910  1.00 30.91           O 0
+ATOM   2496   CA GLY C  54     -21.214  -6.645 -33.575  1.00 26.08           C 0
+ATOM   2485   OG SER C  52     -26.995  -7.805 -30.573  1.00 32.03           O 0
+ATOM   2196   CG PRO C  12     -27.464  -5.063 -27.552  1.00 35.24           C 0
+ATOM   3187    O LEU C 157     -22.496  -0.709 -31.758  1.00 26.80           O 0
+ATOM   2197   CD PRO C  12     -27.377  -3.597 -27.847  1.00 35.32           C 0
+ATOM   2502    O LEU C  55     -20.048  -3.479 -30.258  1.00 22.91           O 0
+ATOM   2499    N LEU C  55     -19.709  -4.964 -32.727  1.00 23.10           N 0
+ATOM   1096   CA PRO B   8     -23.129  -2.677 -38.047  1.00 30.66           C 0
+ATOM   2493  OE1 GLU C  53     -22.674  -7.812 -37.018  1.00 44.01           O 0
+ATOM   1095    N PRO B   8     -24.507  -2.884 -38.484  1.00 30.82           N 0
+ATOM   1102    N SER B   9     -22.151  -0.989 -36.614  1.00 28.80           N 0
+ATOM   2504   CG LEU C  55     -17.688  -3.271 -34.018  1.00 22.68           C 0
+ATOM   1106   CB SER B   9     -20.821   0.214 -34.999  1.00 28.06           C 0
+TER
+END

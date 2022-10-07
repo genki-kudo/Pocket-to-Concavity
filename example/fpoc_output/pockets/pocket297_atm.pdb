@@ -1,0 +1,34 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   298:
+HEADER 0  - Pocket Score                      : -7.8029
+HEADER 1  - Drug Score                        : 0.1804
+HEADER 2  - Number of V. Vertices             :    11
+HEADER 3  - Mean alpha-sphere radius          : 3.3666
+HEADER 4  - Mean alpha-sphere SA              : 0.3590
+HEADER 5  - Mean B-factor                     : 0.0176
+HEADER 6  - Hydrophobicity Score              : 68.5000
+HEADER 7  - Polarity Score                    :     0
+HEADER 8  - Volume Score                      : 3.7500
+HEADER 9  - Real volume (approximation)       : 115.7298
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 10.0000
+HEADER 12 - Number of apolar alpha sphere     :    11
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   1079  CD1 ILE A 155     -13.703   7.413 -19.871  1.00 13.23           C 0
+ATOM    398  CD2 LEU A  57     -13.671   4.121 -17.382  1.00 13.95           C 0
+ATOM   1078  CG2 ILE A 155     -16.836   7.549 -20.656  1.00 12.10           C 0
+ATOM   1478  CD1 LEU B  57     -14.285   4.457 -24.312  1.00  2.00           C 0
+ATOM   1092  CD2 LEU A 157     -18.960   3.524 -18.741  1.00 17.22           C 0
+ATOM   1479  CD2 LEU B  57     -13.403   6.683 -23.431  1.00  2.00           C 0
+ATOM   1076   CB ILE A 155     -16.154   7.923 -19.328  1.00 13.24           C 0
+ATOM   2526  CD2 LEU C  57     -16.418   0.774 -23.349  1.00 18.23           C 0
+ATOM    395   CB LEU A  57     -15.694   4.861 -16.083  1.00 14.00           C 0
+ATOM   3178  CD1 ILE C 155     -20.648   0.669 -21.606  1.00 15.10           C 0
+ATOM   2544  CE2 TYR C  59     -18.215  -1.561 -19.335  1.00 16.27           C 0
+ATOM   2542  CD2 TYR C  59     -16.877  -1.805 -19.768  1.00 16.35           C 0
+ATOM   2183  CD2 LEU B 157     -16.857   7.179 -26.288  1.00 19.44           C 0
+TER
+END

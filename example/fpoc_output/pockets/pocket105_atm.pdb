@@ -1,0 +1,34 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   106:
+HEADER 0  - Pocket Score                      : -0.3309
+HEADER 1  - Drug Score                        : 0.0056
+HEADER 2  - Number of V. Vertices             :    12
+HEADER 3  - Mean alpha-sphere radius          : 3.0920
+HEADER 4  - Mean alpha-sphere SA              : 0.3711
+HEADER 5  - Mean B-factor                     : 0.1646
+HEADER 6  - Hydrophobicity Score              : 0.8571
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.0000
+HEADER 9  - Real volume (approximation)       : 30.1505
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 8.0000
+HEADER 12 - Number of apolar alpha sphere     :     9
+HEADER 13 - Proportion of apolar alpha sphere : 0.7500
+ATOM    566    C SER A  81     -15.298  12.342  -3.705  1.00 20.63           C 0
+ATOM    568   CB SER A  81     -13.712  12.908  -1.949  1.00 20.57           C 0
+ATOM    586  CG1 ILE A  83     -17.805  17.110  -1.639  1.00 18.99           C 0
+ATOM    570    N ARG A  82     -16.440  12.158  -3.084  1.00 20.94           N 0
+ATOM    572    C ARG A  82     -18.394  13.510  -2.642  1.00 20.70           C 0
+ATOM    900   CB SER A 133     -12.542  15.995  -4.466  1.00 17.81           C 0
+ATOM    567    O SER A  81     -15.210  12.931  -4.757  1.00 20.74           O 0
+ATOM    640   CG LYS A  90     -14.706  16.083   0.417  1.00 26.48           C 0
+ATOM    880    O ARG A 131     -17.692  15.620  -5.402  1.00 17.42           O 0
+ATOM    642   CE LYS A  90     -12.877  17.517  -0.657  1.00 30.49           C 0
+ATOM    322  NE2 GLN A  47     -14.500  19.793  -3.787  1.00 18.62           N 0
+ATOM    588  CD1 ILE A  83     -17.260  18.505  -1.567  1.00 19.70           C 0
+ATOM    581    N ILE A  83     -18.805  14.715  -3.067  1.00 20.34           N 0
+TER
+END

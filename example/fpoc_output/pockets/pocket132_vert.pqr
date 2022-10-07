@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   133:
+HEADER 0  - Pocket Score                      : -1.1769
+HEADER 1  - Drug Score                        : 0.0061
+HEADER 2  - Number of V. Vertices             :    15
+HEADER 3  - Mean alpha-sphere radius          : 3.9743
+HEADER 4  - Mean alpha-sphere SA              : 0.6236
+HEADER 5  - Mean B-factor                     : 0.3070
+HEADER 6  - Hydrophobicity Score              : 9.6667
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 3.0000
+HEADER 9  - Real volume (approximation)       : 234.1167
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     3
+HEADER 13 - Proportion of apolar alpha sphere : 0.2000
+ATOM  16837 APOL STP   133       4.630  19.619 -19.179    0.00     3.89
+ATOM  18719 APOL STP   133       4.374  19.470 -18.986    0.00     3.71
+ATOM  18639 APOL STP   133       4.622  19.636 -19.243    0.00     3.91
+ATOM  16837  POL STP   133       4.811  19.753 -19.245    0.00     3.97
+ATOM  18731  POL STP   133       4.837  19.783 -19.229    0.00     3.96
+ATOM  16837  POL STP   133       4.804  19.886 -19.649    0.00     4.15
+ATOM  18736  POL STP   133       5.155  19.134 -18.759    0.00     3.28
+ATOM  18639  POL STP   133       4.797  19.882 -19.649    0.00     4.15
+ATOM  18639  POL STP   133       4.813  19.885 -19.686    0.00     4.15
+ATOM  18639  POL STP   133       5.191  19.929 -20.886    0.00     4.42
+ATOM  16837  POL STP   133       6.261  18.724 -22.348    0.00     4.42
+ATOM  18637  POL STP   133       5.870  17.939 -22.115    0.00     3.75
+ATOM  18639  POL STP   133       5.506  19.428 -21.285    0.00     4.22
+ATOM  19676  POL STP   133       5.349  19.013 -18.545    0.00     3.04
+ATOM  18731  POL STP   133       6.109  21.586 -19.402    0.00     4.58
+TER
+END

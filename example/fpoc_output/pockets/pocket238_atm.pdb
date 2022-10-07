@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   239:
+HEADER 0  - Pocket Score                      : -4.0759
+HEADER 1  - Drug Score                        : 0.0126
+HEADER 2  - Number of V. Vertices             :    18
+HEADER 3  - Mean alpha-sphere radius          : 4.2469
+HEADER 4  - Mean alpha-sphere SA              : 0.5102
+HEADER 5  - Mean B-factor                     : 0.8166
+HEADER 6  - Hydrophobicity Score              : 28.4286
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 4.2857
+HEADER 9  - Real volume (approximation)       : 445.0681
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     3
+HEADER 13 - Proportion of apolar alpha sphere : 0.1667
+ATOM   2262  NE2 GLN C  21     -26.361  -9.923   0.828  1.00 55.59           N 0
+ATOM   2342   CB ARG C  32     -25.693  -6.025  -6.967  1.00 61.19           C 0
+ATOM   2323  CD1 LEU C  29     -24.416 -10.305  -6.066  1.00 49.96           C 0
+ATOM   2336    O ARG C  31     -29.084  -7.889  -7.107  1.00 59.43           O 0
+ATOM   2339   CA ARG C  32     -27.190  -5.772  -7.033  1.00 61.22           C 0
+ATOM   2253   CD PRO C  20     -21.542  -8.501  -2.658  1.00 47.34           C 0
+ATOM   2261  OE1 GLN C  21     -26.303 -12.090   0.174  1.00 57.72           O 0
+ATOM   2260   CD GLN C  21     -25.710 -11.055   0.529  1.00 56.33           C 0
+ATOM   2246  ND2 ASN C  19     -23.868 -13.083  -3.904  1.00 47.52           N 0
+ATOM   2245  OD1 ASN C  19     -22.798 -11.615  -2.556  1.00 47.24           O 0
+ATOM   2259   CG GLN C  21     -24.143 -11.023   0.644  1.00 54.12           C 0
+ATOM   2343    N ALA C  33     -27.100  -3.512  -6.153  1.00 63.40           N 0
+ATOM   2347   CB ALA C  33     -26.883  -1.411  -4.858  1.00 64.30           C 0
+ATOM   2252   CG PRO C  20     -20.967  -7.417  -1.795  1.00 48.20           C 0
+TER
+END

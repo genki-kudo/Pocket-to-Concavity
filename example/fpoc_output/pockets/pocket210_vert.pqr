@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   211:
+HEADER 0  - Pocket Score                      : -3.1784
+HEADER 1  - Drug Score                        : 0.0182
+HEADER 2  - Number of V. Vertices             :    13
+HEADER 3  - Mean alpha-sphere radius          : 4.1827
+HEADER 4  - Mean alpha-sphere SA              : 0.5831
+HEADER 5  - Mean B-factor                     : 0.5316
+HEADER 6  - Hydrophobicity Score              : 28.5714
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 5.1429
+HEADER 9  - Real volume (approximation)       : 493.2748
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 1.0000
+HEADER 12 - Number of apolar alpha sphere     :     2
+HEADER 13 - Proportion of apolar alpha sphere : 0.1538
+ATOM   4104  POL STP   211     -28.378 -20.562 -28.791    0.00     5.87
+ATOM   4104  POL STP   211     -26.890 -18.623 -31.051    0.00     4.14
+ATOM   8286  POL STP   211     -26.831 -17.959 -30.933    0.00     3.76
+ATOM   8286 APOL STP   211     -26.394 -17.207 -30.737    0.00     3.11
+ATOM  11533 APOL STP   211     -26.383 -17.118 -30.675    0.00     3.05
+ATOM   5275  POL STP   211     -26.167 -19.008 -26.665    0.00     3.86
+ATOM   5277  POL STP   211     -26.031 -21.060 -27.287    0.00     4.85
+ATOM   5281  POL STP   211     -24.810 -21.935 -26.877    0.00     4.85
+ATOM   5277  POL STP   211     -26.337 -20.639 -27.509    0.00     4.81
+ATOM   5276  POL STP   211     -24.863 -19.421 -25.195    0.00     3.51
+ATOM   5277  POL STP   211     -24.842 -19.885 -25.348    0.00     3.68
+ATOM   5280  POL STP   211     -24.189 -21.376 -25.905    0.00     4.27
+ATOM   5281  POL STP   211     -24.279 -21.829 -26.328    0.00     4.60
+TER
+END

@@ -1,0 +1,34 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   146:
+HEADER 0  - Pocket Score                      : -1.6255
+HEADER 1  - Drug Score                        : 0.0049
+HEADER 2  - Number of V. Vertices             :    15
+HEADER 3  - Mean alpha-sphere radius          : 4.2728
+HEADER 4  - Mean alpha-sphere SA              : 0.7261
+HEADER 5  - Mean B-factor                     : 0.1312
+HEADER 6  - Hydrophobicity Score              : -6.6000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.2000
+HEADER 9  - Real volume (approximation)       : 303.8404
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 4.0000
+HEADER 12 - Number of apolar alpha sphere     :     5
+HEADER 13 - Proportion of apolar alpha sphere : 0.3333
+ATOM    949   CD PRO A 139       0.989  17.371  -1.559  1.00 18.35           C 0
+ATOM    948   CG PRO A 139       0.831  18.730  -2.084  1.00 18.65           C 0
+ATOM    927    O ASN A 137       0.587  15.616   1.077  1.00 16.80           O 0
+ATOM    957  OD2 ASP A 140       6.837  17.517   0.362  1.00 19.63           O 0
+ATOM    956  OD1 ASP A 140       5.211  16.583  -0.763  1.00 15.61           O 0
+ATOM    955   CG ASP A 140       6.142  17.416  -0.677  1.00 18.65           C 0
+ATOM    939   NE ARG A 138       4.864  14.738   1.674  1.00 24.42           N 0
+ATOM    954   CB ASP A 140       6.458  18.394  -1.807  1.00 20.13           C 0
+ATOM    133    O GLY A  24       1.603  22.500  -3.505  1.00 19.59           O 0
+ATOM    131   CA GLY A  24       3.606  22.320  -4.801  1.00 19.03           C 0
+ATOM    950    N ASP A 140       4.369  17.789  -2.999  1.00 20.47           N 0
+ATOM    951   CA ASP A 140       5.784  18.047  -3.158  1.00 20.36           C 0
+ATOM    947   CB PRO A 139       1.318  18.777  -3.486  1.00 18.92           C 0
+TER
+END

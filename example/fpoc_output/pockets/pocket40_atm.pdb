@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    41:
+HEADER 0  - Pocket Score                      : 3.4462
+HEADER 1  - Drug Score                        : 0.0163
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 4.1878
+HEADER 4  - Mean alpha-sphere SA              : 0.6258
+HEADER 5  - Mean B-factor                     : 0.5571
+HEADER 6  - Hydrophobicity Score              : 19.3750
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 4.8750
+HEADER 9  - Real volume (approximation)       : 432.5188
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 7.0000
+HEADER 12 - Number of apolar alpha sphere     :     8
+HEADER 13 - Proportion of apolar alpha sphere : 0.2581
+ATOM   2404   CD GLU C  42     -29.987 -15.894 -21.305  1.00 54.00           C 0
+ATOM   2390    O GLY C  40     -29.292 -10.728 -23.827  1.00 59.12           O 0
+ATOM   2970   NZ LYS C 128     -29.682 -15.628 -31.692  1.00 42.54           N 0
+ATOM   2406  OE2 GLU C  42     -31.203 -16.211 -21.286  1.00 54.87           O 0
+ATOM   2425  NH2 ARG C  44     -27.691 -19.203 -23.121  1.00 53.96           N 0
+ATOM   2403   CG GLU C  42     -29.642 -14.385 -21.297  1.00 51.84           C 0
+ATOM   2476    O PRO C  51     -28.084 -11.618 -29.780  1.00 33.05           O 0
+ATOM   2474   CA PRO C  51     -27.165 -11.247 -27.642  1.00 33.32           C 0
+ATOM   2464  CG1 VAL C  49     -25.200 -16.008 -24.431  1.00 32.82           C 0
+ATOM   2469    O VAL C  50     -25.099 -13.097 -27.837  1.00 32.29           O 0
+ATOM   2405  OE1 GLU C  42     -29.066 -16.765 -21.319  1.00 53.86           O 0
+ATOM   2462    O VAL C  49     -24.936 -12.265 -23.853  1.00 32.17           O 0
+ATOM   2402   CB GLU C  42     -28.190 -14.099 -20.890  1.00 51.71           C 0
+ATOM   2463   CB VAL C  49     -24.955 -15.196 -23.140  1.00 32.70           C 0
+ATOM   2398    N GLU C  42     -27.760 -11.678 -21.312  1.00 52.57           N 0
+ATOM   2967   CG LYS C 128     -26.792 -14.277 -31.694  1.00 35.99           C 0
+ATOM   2971    N GLY C 129     -24.177 -15.377 -29.500  1.00 34.00           N 0
+ATOM   2972   CA GLY C 129     -24.010 -16.640 -28.826  1.00 33.80           C 0
+ATOM   2468    C VAL C  50     -24.930 -12.129 -27.121  1.00 32.56           C 0
+ATOM   2473    N PRO C  51     -25.842 -11.154 -27.018  1.00 33.59           N 0
+ATOM   2477   CB PRO C  51     -27.906 -10.059 -27.046  1.00 33.56           C 0
+TER
+END

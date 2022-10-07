@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    49:
+HEADER 0  - Pocket Score                      : 2.5780
+HEADER 1  - Drug Score                        : 0.0072
+HEADER 2  - Number of V. Vertices             :    14
+HEADER 3  - Mean alpha-sphere radius          : 4.0324
+HEADER 4  - Mean alpha-sphere SA              : 0.5839
+HEADER 5  - Mean B-factor                     : 0.1657
+HEADER 6  - Hydrophobicity Score              : -0.5000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 303.4511
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     0
+HEADER 13 - Proportion of apolar alpha sphere : 0.0000
+ATOM   4624  POL STP    49      -8.619  22.743  -1.994    0.00     5.60
+ATOM   9978  POL STP    49      -8.709  22.511  -2.150    0.00     5.41
+ATOM   9978  POL STP    49      -8.887  19.891  -3.665    0.00     3.81
+ATOM   9978  POL STP    49      -9.144  19.824  -3.776    0.00     3.81
+ATOM   6774  POL STP    49      -9.932  20.877  -3.403    0.00     4.25
+ATOM   9978  POL STP    49      -9.725  20.789  -3.401    0.00     4.27
+ATOM   6774  POL STP    49     -10.722  20.856  -3.324    0.00     3.95
+ATOM   6780  POL STP    49     -11.250  20.517  -4.247    0.00     3.36
+ATOM   6774  POL STP    49     -10.786  20.353  -4.826    0.00     3.35
+ATOM   9979  POL STP    49     -10.073  19.993  -4.912    0.00     3.35
+ATOM   6780  POL STP    49     -10.942  20.326  -4.879    0.00     3.29
+ATOM   6774  POL STP    49      -9.578  20.049  -3.229    0.00     3.81
+ATOM   9978  POL STP    49      -9.460  20.519  -3.358    0.00     4.20
+ATOM   9978  POL STP    49      -9.267  20.138  -3.558    0.00     3.99
+TER
+END

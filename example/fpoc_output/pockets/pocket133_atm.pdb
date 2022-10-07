@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   134:
+HEADER 0  - Pocket Score                      : -1.1914
+HEADER 1  - Drug Score                        : 0.0253
+HEADER 2  - Number of V. Vertices             :    16
+HEADER 3  - Mean alpha-sphere radius          : 4.0233
+HEADER 4  - Mean alpha-sphere SA              : 0.6623
+HEADER 5  - Mean B-factor                     : 0.2765
+HEADER 6  - Hydrophobicity Score              : 33.7778
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 521.2758
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     3
+HEADER 13 - Proportion of apolar alpha sphere : 0.1875
+ATOM   2862  CE1 TYR C 115      -7.457  -3.117   0.992  1.00 25.18           C 0
+ATOM    679   CB SER A  95      -8.778   5.439  -0.743  1.00 22.45           C 0
+ATOM   2864   CZ TYR C 115      -6.749  -2.635   2.082  1.00 24.76           C 0
+ATOM    678    O SER A  95      -7.326   3.254  -2.353  1.00 21.37           O 0
+ATOM   3128  NE2 GLN C 149     -11.280   0.382  -4.491  1.00 31.89           N 0
+ATOM   2865   OH TYR C 115      -7.320  -2.668   3.334  1.00 24.67           O 0
+ATOM   3104   CB ALA C 145     -14.490  -4.813   1.402  1.00 46.76           C 0
+ATOM   3094  OD2 ASP C 143     -10.141  -5.130  -0.284  1.00 39.52           O 0
+ATOM    662    O LEU A  93     -14.246   4.401  -3.461  1.00 18.42           O 0
+ATOM   3109   CB GLU C 146     -17.863  -1.874  -0.747  1.00 46.09           C 0
+ATOM    655   CB ASN A  92     -13.267   7.815   0.760  1.00 25.09           C 0
+ATOM    654    O ASN A  92     -15.733   6.852  -0.564  1.00 24.87           O 0
+ATOM    661    C LEU A  93     -13.992   5.582  -3.524  1.00 20.27           C 0
+ATOM    667    N LEU A  94     -12.779   6.075  -3.764  1.00 20.74           N 0
+ATOM    669    C LEU A  94     -10.395   5.873  -3.356  1.00 21.77           C 0
+ATOM    675    N SER A  95      -9.414   5.027  -3.041  1.00 22.07           N 0
+ATOM    668   CA LEU A  94     -11.580   5.309  -4.109  1.00 21.50           C 0
+TER
+END

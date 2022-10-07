@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   117:
+HEADER 0  - Pocket Score                      : -0.6749
+HEADER 1  - Drug Score                        : 0.0345
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.8912
+HEADER 4  - Mean alpha-sphere SA              : 0.4823
+HEADER 5  - Mean B-factor                     : 0.2383
+HEADER 6  - Hydrophobicity Score              : 38.2727
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.3636
+HEADER 9  - Real volume (approximation)       : 550.1176
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     1
+HEADER 13 - Proportion of apolar alpha sphere : 0.0333
+ATOM   1209  OE1 GLU B  23      14.709 -10.999 -29.535  1.00 42.02           O 0
+ATOM   1200    O ALA B  22      10.309  -8.064 -30.277  1.00 30.65           O 0
+ATOM   1203   CA GLU B  23      12.973  -8.422 -30.920  1.00 32.02           C 0
+ATOM   1208   CD GLU B  23      14.060 -11.398 -30.538  1.00 39.70           C 0
+ATOM   1210  OE2 GLU B  23      13.334 -12.427 -30.527  1.00 41.66           O 0
+ATOM   1211    N GLY B  24      13.411  -6.591 -29.367  1.00 30.19           N 0
+ATOM   1184    O PRO B  20       8.121 -11.636 -29.052  1.00 25.39           O 0
+ATOM   2037    O PRO B 139      10.491  -6.413 -24.392  1.00 21.02           O 0
+ATOM   2042   CA ASP B 140      13.011  -6.777 -23.385  1.00 21.84           C 0
+ATOM   2085  CE1 PHE B 144       6.530  -9.690 -25.831  1.00 17.60           C 0
+ATOM   2083  CD1 PHE B 144       6.136 -10.954 -25.341  1.00 18.00           C 0
+ATOM   2064    O LEU B 142       8.384  -9.748 -22.072  1.00 20.68           O 0
+ATOM   2044    O ASP B 140      12.352  -8.373 -21.744  1.00 22.33           O 0
+ATOM   1218    O GLN B  25       8.946  -4.834 -29.199  1.00 23.72           O 0
+ATOM   2067  CD1 LEU B 142       7.036  -5.476 -25.430  1.00 16.22           C 0
+ATOM   2087   CZ PHE B 144       5.635  -8.901 -26.523  1.00 16.30           C 0
+ATOM   1176    O ASN B  19       6.080  -8.926 -30.491  1.00 21.06           O 0
+ATOM   2038   CB PRO B 139      11.115  -3.960 -26.426  1.00 19.63           C 0
+ATOM   1196  NE2 GLN B  21       8.421 -15.744 -29.551  1.00 23.79           N 0
+ATOM   2041    N ASP B 140      12.513  -5.546 -23.998  1.00 21.31           N 0
+ATOM   2036    C PRO B 139      11.268  -5.462 -24.422  1.00 20.60           C 0
+ATOM   2045   CB ASP B 140      14.525  -6.679 -23.069  1.00 22.03           C 0
+TER
+END

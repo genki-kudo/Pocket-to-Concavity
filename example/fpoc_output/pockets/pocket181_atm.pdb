@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   182:
+HEADER 0  - Pocket Score                      : -2.4765
+HEADER 1  - Drug Score                        : 0.0139
+HEADER 2  - Number of V. Vertices             :    24
+HEADER 3  - Mean alpha-sphere radius          : 3.6414
+HEADER 4  - Mean alpha-sphere SA              : 0.5801
+HEADER 5  - Mean B-factor                     : 0.3081
+HEADER 6  - Hydrophobicity Score              : 23.1429
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.1429
+HEADER 9  - Real volume (approximation)       : 243.4810
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 10.9231
+HEADER 12 - Number of apolar alpha sphere     :    13
+HEADER 13 - Proportion of apolar alpha sphere : 0.5417
+ATOM   1978  NH2 ARG B 131       4.215  10.812 -37.707  1.00 33.83           N 0
+ATOM   1673  CG2 ILE B  83       2.164  14.064 -35.388  1.00 22.95           C 0
+ATOM   1712  OE1 GLN B  88       3.569  16.966 -39.391  1.00 33.19           O 0
+ATOM   1977  NH1 ARG B 131       2.844  11.825 -39.272  1.00 33.27           N 0
+ATOM   1713  NE2 GLN B  88       1.440  17.520 -39.875  1.00 32.45           N 0
+ATOM   1686  CG2 VAL B  85      -2.256  14.973 -39.620  1.00 31.51           C 0
+ATOM   1974   CD ARG B 131       0.625  10.175 -38.465  1.00 27.88           C 0
+ATOM   1959    O GLY B 129      -3.285  12.436 -38.630  1.00 23.28           O 0
+ATOM   1670    O ILE B  83      -1.237  13.666 -34.729  1.00 22.62           O 0
+ATOM   1680    N VAL B  85      -2.007  16.466 -36.848  1.00 29.00           N 0
+ATOM   1681   CA VAL B  85      -1.570  16.875 -38.176  1.00 30.30           C 0
+ATOM   1706   CA GLN B  88       2.983  18.635 -36.479  1.00 29.47           C 0
+ATOM   1707    C GLN B  88       3.906  18.581 -35.246  1.00 29.14           C 0
+ATOM   1708    O GLN B  88       5.089  18.934 -35.312  1.00 29.24           O 0
+ATOM   1715   CA THR B  89       4.054  17.955 -32.850  1.00 28.65           C 0
+ATOM   1716    C THR B  89       3.679  16.587 -32.245  1.00 28.31           C 0
+ATOM   1721    N LYS B  90       4.556  16.045 -31.399  1.00 27.91           N 0
+ATOM   1714    N THR B  89       3.333  18.170 -34.116  1.00 28.95           N 0
+ATOM   1725   CB LYS B  90       5.438  13.783 -30.939  1.00 28.02           C 0
+ATOM   1727   CD LYS B  90       6.307  11.430 -30.705  1.00 26.31           C 0
+ATOM   1672  CG1 ILE B  83       2.829  12.263 -33.775  1.00 23.58           C 0
+TER
+END

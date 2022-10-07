@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   120:
+HEADER 0  - Pocket Score                      : -0.7603
+HEADER 1  - Drug Score                        : 0.0084
+HEADER 2  - Number of V. Vertices             :    13
+HEADER 3  - Mean alpha-sphere radius          : 4.0832
+HEADER 4  - Mean alpha-sphere SA              : 0.6455
+HEADER 5  - Mean B-factor                     : 0.5137
+HEADER 6  - Hydrophobicity Score              : 11.4286
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.5714
+HEADER 9  - Real volume (approximation)       : 225.2859
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 6.0000
+HEADER 12 - Number of apolar alpha sphere     :     7
+HEADER 13 - Proportion of apolar alpha sphere : 0.5385
+ATOM   3208  POL STP   120     -14.571 -17.224 -33.288    0.00     3.71
+ATOM   3208  POL STP   120     -14.284 -17.727 -34.728    0.00     4.82
+ATOM   4109 APOL STP   120     -15.763 -18.001 -35.396    0.00     5.09
+ATOM   3315 APOL STP   120     -15.933 -18.247 -35.172    0.00     4.82
+ATOM   4109 APOL STP   120     -15.820 -18.034 -35.389    0.00     5.08
+ATOM   4557  POL STP   120     -17.232 -19.043 -33.663    0.00     3.47
+ATOM   9246 APOL STP   120     -17.652 -18.127 -33.881    0.00     3.97
+ATOM   9245  POL STP   120     -17.928 -18.325 -33.086    0.00     3.40
+ATOM   9245  POL STP   120     -17.929 -18.232 -33.044    0.00     3.40
+ATOM   5288  POL STP   120     -17.181 -17.331 -33.400    0.00     3.69
+ATOM   9245 APOL STP   120     -17.687 -17.904 -33.680    0.00     3.88
+ATOM   9246 APOL STP   120     -17.629 -18.072 -33.933    0.00     4.02
+ATOM   9252 APOL STP   120     -19.311 -18.004 -35.278    0.00     3.73
+TER
+END

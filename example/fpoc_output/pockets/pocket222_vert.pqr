@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   223:
+HEADER 0  - Pocket Score                      : -3.6588
+HEADER 1  - Drug Score                        : 0.0607
+HEADER 2  - Number of V. Vertices             :    16
+HEADER 3  - Mean alpha-sphere radius          : 4.4023
+HEADER 4  - Mean alpha-sphere SA              : 0.7029
+HEADER 5  - Mean B-factor                     : 0.3060
+HEADER 6  - Hydrophobicity Score              : 47.6667
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.3333
+HEADER 9  - Real volume (approximation)       : 655.9663
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     3
+HEADER 13 - Proportion of apolar alpha sphere : 0.1875
+ATOM   5826  POL STP   223     -15.002  -6.097 -40.639    0.00     5.66
+ATOM   5848  POL STP   223     -17.284  -3.530 -38.670    0.00     4.32
+ATOM   8758  POL STP   223     -17.791  -3.538 -38.746    0.00     4.39
+ATOM   8700  POL STP   223     -17.082  -2.785 -38.295    0.00     3.76
+ATOM   5826 APOL STP   223     -15.151  -4.544 -37.232    0.00     3.45
+ATOM   5848 APOL STP   223     -16.540  -3.682 -37.690    0.00     3.66
+ATOM  11083 APOL STP   223     -17.192  -3.852 -36.931    0.00     3.01
+ATOM   8758  POL STP   223     -17.645  -2.832 -38.397    0.00     3.83
+ATOM   8758  POL STP   223     -17.883  -3.629 -38.903    0.00     4.45
+ATOM   8758  POL STP   223     -18.127  -3.590 -38.543    0.00     4.25
+ATOM   7876  POL STP   223     -18.594  -7.627 -41.079    0.00     5.76
+ATOM   8627  POL STP   223     -14.797  -3.597 -42.496    0.00     5.29
+ATOM   8627  POL STP   223     -14.967  -3.860 -42.235    0.00     5.32
+ATOM   8627  POL STP   223     -14.921  -2.933 -41.477    0.00     4.28
+ATOM  11073  POL STP   223     -18.703  -7.686 -40.137    0.00     4.90
+ATOM  11073  POL STP   223     -19.244  -7.141 -39.188    0.00     4.11
+TER
+END

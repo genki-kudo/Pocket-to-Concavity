@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   174:
+HEADER 0  - Pocket Score                      : -2.2742
+HEADER 1  - Drug Score                        : 0.0088
+HEADER 2  - Number of V. Vertices             :    17
+HEADER 3  - Mean alpha-sphere radius          : 4.1627
+HEADER 4  - Mean alpha-sphere SA              : 0.7203
+HEADER 5  - Mean B-factor                     : 0.3813
+HEADER 6  - Hydrophobicity Score              : 16.6667
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 539.7665
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 4.0000
+HEADER 12 - Number of apolar alpha sphere     :     5
+HEADER 13 - Proportion of apolar alpha sphere : 0.2941
+ATOM   2059   CZ TYR B 141      14.541  -5.474 -16.619  1.00 31.88           C 0
+ATOM   2058  CE2 TYR B 141      13.572  -6.438 -16.412  1.00 31.60           C 0
+ATOM   2048  OD2 ASP B 140      15.907  -5.293 -21.733  1.00 25.50           O 0
+ATOM   2060   OH TYR B 141      15.672  -5.466 -15.815  1.00 31.87           O 0
+ATOM   2056  CD2 TYR B 141      12.431  -6.466 -17.240  1.00 31.33           C 0
+ATOM   2044    O ASP B 140      12.352  -8.373 -21.744  1.00 22.33           O 0
+ATOM   2055  CD1 TYR B 141      13.243  -4.570 -18.456  1.00 29.08           C 0
+ATOM   2054   CG TYR B 141      12.249  -5.538 -18.279  1.00 26.51           C 0
+ATOM   2057  CE1 TYR B 141      14.384  -4.534 -17.633  1.00 29.95           C 0
+ATOM   2033  NH2 ARG B 138      16.855  -3.780 -19.790  1.00 35.33           N 0
+ATOM   1544    O LYS B  65      10.335  -9.099 -17.035  1.00 26.97           O 0
+ATOM   1554    N GLN B  67      12.974 -11.017 -13.556  1.00 34.52           N 0
+ATOM   1551   CA GLY B  66      11.578  -9.333 -14.571  1.00 31.00           C 0
+ATOM   1561  OE1 GLN B  67      12.852 -15.283 -15.786  1.00 40.64           O 0
+ATOM   1560   CD GLN B  67      13.376 -15.289 -14.659  1.00 40.59           C 0
+ATOM   1558   CB GLN B  67      13.990 -13.247 -13.237  1.00 36.35           C 0
+ATOM   1562  NE2 GLN B  67      14.350 -16.148 -14.314  1.00 40.92           N 0
+ATOM   1557    O GLN B  67      15.398 -11.062 -11.709  1.00 36.93           O 0
+TER
+END

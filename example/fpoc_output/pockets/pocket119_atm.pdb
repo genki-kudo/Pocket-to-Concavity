@@ -1,0 +1,34 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   120:
+HEADER 0  - Pocket Score                      : -0.7603
+HEADER 1  - Drug Score                        : 0.0084
+HEADER 2  - Number of V. Vertices             :    13
+HEADER 3  - Mean alpha-sphere radius          : 4.0832
+HEADER 4  - Mean alpha-sphere SA              : 0.6455
+HEADER 5  - Mean B-factor                     : 0.5137
+HEADER 6  - Hydrophobicity Score              : 11.4286
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.5714
+HEADER 9  - Real volume (approximation)       : 225.2859
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 6.0000
+HEADER 12 - Number of apolar alpha sphere     :     7
+HEADER 13 - Proportion of apolar alpha sphere : 0.5385
+ATOM   2706   CB ALA C  84     -15.957 -19.159 -30.440  1.00 36.35           C 0
+ATOM   2692  NH1 ARG C  82     -13.846 -13.874 -31.864  1.00 30.03           N 0
+ATOM   2693  NH2 ARG C  82     -16.090 -13.995 -32.268  1.00 28.56           N 0
+ATOM   2691   CZ ARG C  82     -15.082 -14.059 -31.418  1.00 27.99           C 0
+ATOM   2724   CB TYR C  87     -14.533 -21.964 -32.443  1.00 48.44           C 0
+ATOM   2958   CG GLU C 127     -19.202 -14.394 -34.346  1.00 35.27           C 0
+ATOM   2718   CB SER C  86     -19.274 -21.676 -34.624  1.00 47.80           C 0
+ATOM   2720    N TYR C  87     -16.900 -22.426 -32.976  1.00 48.54           N 0
+ATOM   2714    N SER C  86     -19.507 -21.201 -32.182  1.00 46.21           N 0
+ATOM   2712  CG1 VAL C  85     -21.176 -18.487 -32.084  1.00 42.22           C 0
+ATOM   2707    N VAL C  85     -19.181 -19.362 -30.097  1.00 40.74           N 0
+ATOM   2981  OD1 ASP C 130     -18.975 -16.585 -30.265  1.00 31.56           O 0
+ATOM   2719   OG SER C  86     -20.565 -21.516 -35.201  1.00 47.91           O 0
+TER
+END

@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   211:
+HEADER 0  - Pocket Score                      : -3.1784
+HEADER 1  - Drug Score                        : 0.0182
+HEADER 2  - Number of V. Vertices             :    13
+HEADER 3  - Mean alpha-sphere radius          : 4.1827
+HEADER 4  - Mean alpha-sphere SA              : 0.5831
+HEADER 5  - Mean B-factor                     : 0.5316
+HEADER 6  - Hydrophobicity Score              : 28.5714
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 5.1429
+HEADER 9  - Real volume (approximation)       : 493.2748
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 1.0000
+HEADER 12 - Number of apolar alpha sphere     :     2
+HEADER 13 - Proportion of apolar alpha sphere : 0.1538
+ATOM   2972   CA GLY C 129     -24.010 -16.640 -28.826  1.00 33.80           C 0
+ATOM   2425  NH2 ARG C  44     -27.691 -19.203 -23.121  1.00 53.96           N 0
+ATOM   2970   NZ LYS C 128     -29.682 -15.628 -31.692  1.00 42.54           N 0
+ATOM   2713  CG2 VAL C  85     -22.910 -19.743 -30.764  1.00 42.81           C 0
+ATOM   2965    O LYS C 128     -23.558 -16.203 -31.516  1.00 34.17           O 0
+ATOM   2967   CG LYS C 128     -26.792 -14.277 -31.694  1.00 35.99           C 0
+ATOM   2964    C LYS C 128     -23.969 -15.265 -30.808  1.00 34.23           C 0
+ATOM   2971    N GLY C 129     -24.177 -15.377 -29.500  1.00 34.00           N 0
+ATOM   2974    O GLY C 129     -22.596 -17.631 -27.195  1.00 34.44           O 0
+ATOM   2464  CG1 VAL C  49     -25.200 -16.008 -24.431  1.00 32.82           C 0
+ATOM   2424  NH1 ARG C  44     -26.743 -21.207 -22.488  1.00 57.16           N 0
+ATOM   2733  NE2 GLN C  88     -20.409 -23.507 -28.175  1.00 49.45           N 0
+ATOM   2989   CD ARG C 131     -22.128 -18.981 -23.034  1.00 37.21           C 0
+ATOM   2992  NH1 ARG C 131     -20.603 -21.395 -23.588  1.00 41.54           N 0
+TER
+END

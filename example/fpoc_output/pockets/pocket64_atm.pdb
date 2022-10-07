@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    65:
+HEADER 0  - Pocket Score                      : 1.3548
+HEADER 1  - Drug Score                        : 0.0413
+HEADER 2  - Number of V. Vertices             :    20
+HEADER 3  - Mean alpha-sphere radius          : 4.3312
+HEADER 4  - Mean alpha-sphere SA              : 0.6031
+HEADER 5  - Mean B-factor                     : 0.3620
+HEADER 6  - Hydrophobicity Score              : 32.6000
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 5.1000
+HEADER 9  - Real volume (approximation)       : 501.1372
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 7.0000
+HEADER 12 - Number of apolar alpha sphere     :     8
+HEADER 13 - Proportion of apolar alpha sphere : 0.4000
+ATOM   3115   OG SER C 147     -20.841  -1.866  -4.903  1.00 45.07           O 0
+ATOM    827  CE1 PHE A 124     -17.431   3.718  -6.033  1.00 24.43           C 0
+ATOM    666  CD2 LEU A  93     -18.034   7.211  -3.973  1.00  9.41           C 0
+ATOM   3109   CB GLU C 146     -17.863  -1.874  -0.747  1.00 46.09           C 0
+ATOM   3113    O SER C 147     -17.109  -0.478  -4.454  1.00 41.63           O 0
+ATOM    825  CD1 PHE A 124     -18.543   4.277  -6.668  1.00 23.61           C 0
+ATOM   3110    N SER C 147     -18.599  -2.431  -3.368  1.00 44.33           N 0
+ATOM    654    O ASN A  92     -15.733   6.852  -0.564  1.00 24.87           O 0
+ATOM    662    O LEU A  93     -14.246   4.401  -3.461  1.00 18.42           O 0
+ATOM    649  CG1 VAL A  91     -18.448   8.644   0.952  1.00 23.25           C 0
+ATOM    660   CA LEU A  93     -15.089   6.630  -3.262  1.00 20.96           C 0
+ATOM   3112    C SER C 147     -17.720  -1.162  -5.290  1.00 41.26           C 0
+ATOM   3116    N GLY C 148     -17.721  -0.891  -6.595  1.00 38.63           N 0
+ATOM    815    O VAL A 123     -18.887   2.090  -9.641  1.00 18.02           O 0
+ATOM   3117   CA GLY C 148     -16.928   0.197  -7.166  1.00 36.01           C 0
+ATOM   2352   CB ASN C  34     -25.002   0.681  -8.886  1.00 65.65           C 0
+ATOM    820   CA PHE A 124     -20.306   4.468  -9.543  1.00 21.03           C 0
+ATOM    830    N GLN A 125     -22.655   4.934  -9.351  1.00 22.37           N 0
+TER
+END

@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   284:
+HEADER 0  - Pocket Score                      : -6.0039
+HEADER 1  - Drug Score                        : 0.0034
+HEADER 2  - Number of V. Vertices             :     8
+HEADER 3  - Mean alpha-sphere radius          : 4.5578
+HEADER 4  - Mean alpha-sphere SA              : 0.9043
+HEADER 5  - Mean B-factor                     : 0.2252
+HEADER 6  - Hydrophobicity Score              : -18.5000
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 3.5000
+HEADER 9  - Real volume (approximation)       : 504.7458
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     1
+HEADER 13 - Proportion of apolar alpha sphere : 0.1250
+ATOM   1273    C ARG B  31      -3.761 -10.493 -37.731  1.00 21.26           C 0
+ATOM   1282    N ARG B  32      -4.553 -10.485 -36.666  1.00 21.48           N 0
+ATOM   1285    O ARG B  32      -6.791 -10.860 -35.227  1.00 20.96           O 0
+ATOM   1284    C ARG B  32      -5.897 -11.700 -35.097  1.00 20.86           C 0
+ATOM   1274    O ARG B  31      -2.987 -11.413 -38.012  1.00 22.06           O 0
+ATOM   1272   CA ARG B  31      -3.897  -9.269 -38.619  1.00 21.14           C 0
+ATOM   1266    O ASN B  30      -5.592  -7.854 -37.017  1.00 19.32           O 0
+ATOM   1283   CA ARG B  32      -4.513 -11.460 -35.599  1.00 21.33           C 0
+ATOM   1293    N ALA B  33      -6.098 -12.851 -34.504  1.00 20.29           N 0
+ATOM   1279   CZ ARG B  31      -1.875  -9.445 -43.639  1.00 34.75           C 0
+ATOM   1275   CB ARG B  31      -3.021  -9.343 -39.858  1.00 21.64           C 0
+ATOM   1276   CG ARG B  31      -3.286  -8.163 -40.802  1.00 24.53           C 0
+ATOM   1280  NH1 ARG B  31      -2.739  -8.735 -44.377  1.00 35.52           N 0
+ATOM   1281  NH2 ARG B  31      -1.315 -10.533 -44.164  1.00 33.81           N 0
+TER
+END

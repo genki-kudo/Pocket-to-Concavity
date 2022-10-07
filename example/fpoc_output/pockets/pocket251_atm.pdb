@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   252:
+HEADER 0  - Pocket Score                      : -4.4885
+HEADER 1  - Drug Score                        : 0.2316
+HEADER 2  - Number of V. Vertices             :    13
+HEADER 3  - Mean alpha-sphere radius          : 3.0540
+HEADER 4  - Mean alpha-sphere SA              : 0.3565
+HEADER 5  - Mean B-factor                     : 0.2636
+HEADER 6  - Hydrophobicity Score              : 70.8750
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 4.6250
+HEADER 9  - Real volume (approximation)       : 40.5863
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 10.0000
+HEADER 12 - Number of apolar alpha sphere     :    11
+HEADER 13 - Proportion of apolar alpha sphere : 0.8462
+ATOM   3000  CD1 LEU C 132     -18.060 -10.516 -23.784  1.00 25.54           C 0
+ATOM   2454    O LEU C  48     -21.240 -13.757 -22.218  1.00 33.15           O 0
+ATOM   3170  CD1 ILE C 154     -21.894  -7.991 -23.557  1.00 19.67           C 0
+ATOM   2472  CG2 VAL C  50     -21.202 -11.349 -26.685  1.00 32.63           C 0
+ATOM   2466    N VAL C  50     -23.467 -13.048 -25.378  1.00 31.99           N 0
+ATOM   2455   CB LEU C  48     -21.459 -11.359 -20.422  1.00 33.80           C 0
+ATOM   2461    C VAL C  49     -24.122 -13.100 -24.221  1.00 32.20           C 0
+ATOM   2453    C LEU C  48     -22.223 -13.390 -21.600  1.00 33.23           C 0
+ATOM   2951  CD1 LEU C 126     -18.189  -9.635 -27.421  1.00 22.51           C 0
+ATOM   3167   CB ILE C 154     -20.101  -6.336 -22.758  1.00 18.69           C 0
+ATOM   2513  CD1 TYR C  56     -21.410  -6.132 -26.977  1.00 25.59           C 0
+ATOM   3169  CG2 ILE C 154     -19.333  -7.460 -22.113  1.00 17.74           C 0
+ATOM   2532  CG1 ILE C  58     -15.853  -6.978 -24.623  1.00 18.87           C 0
+ATOM   2511   CB TYR C  56     -18.966  -5.602 -27.430  1.00 21.59           C 0
+TER
+END

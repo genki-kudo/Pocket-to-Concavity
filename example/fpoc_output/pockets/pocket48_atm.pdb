@@ -1,0 +1,32 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    49:
+HEADER 0  - Pocket Score                      : 2.5780
+HEADER 1  - Drug Score                        : 0.0072
+HEADER 2  - Number of V. Vertices             :    14
+HEADER 3  - Mean alpha-sphere radius          : 4.0324
+HEADER 4  - Mean alpha-sphere SA              : 0.5839
+HEADER 5  - Mean B-factor                     : 0.1657
+HEADER 6  - Hydrophobicity Score              : -0.5000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 303.4511
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     0
+HEADER 13 - Proportion of apolar alpha sphere : 0.0000
+ATOM    915  OE2 GLU A 135      -8.304  17.247  -0.984  1.00 28.99           O 0
+ATOM    301    O ASP A  45     -12.211  23.017  -6.278  1.00 19.12           O 0
+ATOM    310   CB ASN A  46      -9.739  22.161  -7.447  1.00 17.37           C 0
+ATOM    643   NZ LYS A  90     -11.501  18.175  -0.526  1.00 30.88           N 0
+ATOM    313  ND2 ASN A  46      -7.744  20.794  -7.186  1.00 12.04           N 0
+ATOM    913   CD GLU A 135      -8.965  16.576  -1.788  1.00 25.07           C 0
+ATOM    912   CG GLU A 135      -8.305  16.171  -3.080  1.00 21.68           C 0
+ATOM    901   OG SER A 133     -11.862  17.214  -4.352  1.00 22.35           O 0
+ATOM    322  NE2 GLN A  47     -14.500  19.793  -3.787  1.00 18.62           N 0
+ATOM    319   CG GLN A  47     -13.933  19.865  -6.164  1.00 18.22           C 0
+ATOM    309    O ASN A  46     -11.025  19.774  -8.119  1.00 17.63           O 0
+TER
+END

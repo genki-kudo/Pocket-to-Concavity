@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    91:
+HEADER 0  - Pocket Score                      : 0.2715
+HEADER 1  - Drug Score                        : 0.0153
+HEADER 2  - Number of V. Vertices             :    17
+HEADER 3  - Mean alpha-sphere radius          : 4.9541
+HEADER 4  - Mean alpha-sphere SA              : 0.6444
+HEADER 5  - Mean B-factor                     : 0.3142
+HEADER 6  - Hydrophobicity Score              : 30.0000
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 3.5000
+HEADER 9  - Real volume (approximation)       : 345.2557
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 1.0000
+HEADER 12 - Number of apolar alpha sphere     :     2
+HEADER 13 - Proportion of apolar alpha sphere : 0.1176
+ATOM   4857  POL STP    91       8.936  19.890 -11.098    0.00     5.29
+ATOM   5031  POL STP    91       9.121  19.835 -11.126    0.00     5.38
+ATOM   6945  POL STP    91       8.435  19.892 -11.019    0.00     5.00
+ATOM   4857  POL STP    91       8.705  20.094 -11.423    0.00     5.20
+ATOM  16844  POL STP    91       8.288  20.622 -11.761    0.00     4.86
+ATOM  13462  POL STP    91       8.710  20.097 -11.437    0.00     5.20
+ATOM   6945 APOL STP    91       8.466  19.940 -11.109    0.00     5.02
+ATOM  13462  POL STP    91       9.147  19.855 -11.204    0.00     5.39
+ATOM  16844 APOL STP    91       8.091  20.673 -11.700    0.00     4.70
+ATOM  16844  POL STP    91       8.579  20.508 -11.997    0.00     5.07
+ATOM  18741  POL STP    91       7.502  19.445 -12.362    0.00     3.81
+ATOM  13462  POL STP    91       9.872  19.974 -11.576    0.00     5.55
+ATOM  13462  POL STP    91       9.802  20.188 -11.866    0.00     5.46
+ATOM  16843  POL STP    91       8.916  20.769 -12.469    0.00     5.13
+ATOM  16843  POL STP    91       8.222  20.657 -13.185    0.00     4.47
+ATOM  16844  POL STP    91       7.876  20.416 -12.811    0.00     4.35
+ATOM  18741  POL STP    91       7.862  20.399 -12.813    0.00     4.33
+TER
+END

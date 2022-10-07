@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   239:
+HEADER 0  - Pocket Score                      : -4.0759
+HEADER 1  - Drug Score                        : 0.0126
+HEADER 2  - Number of V. Vertices             :    18
+HEADER 3  - Mean alpha-sphere radius          : 4.2469
+HEADER 4  - Mean alpha-sphere SA              : 0.5102
+HEADER 5  - Mean B-factor                     : 0.8166
+HEADER 6  - Hydrophobicity Score              : 28.4286
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 4.2857
+HEADER 9  - Real volume (approximation)       : 445.0681
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     3
+HEADER 13 - Proportion of apolar alpha sphere : 0.1667
+ATOM   6481  POL STP   239     -26.958  -8.030  -3.177    0.00     4.47
+ATOM  13202  POL STP   239     -26.968  -8.013  -3.170    0.00     4.47
+ATOM   9574 APOL STP   239     -25.841  -7.635  -2.884    0.00     4.39
+ATOM   4646  POL STP   239     -27.885  -9.890  -3.336    0.00     4.43
+ATOM   7294  POL STP   239     -26.808  -9.954  -3.028    0.00     3.88
+ATOM   7287  POL STP   239     -26.130 -10.532  -2.989    0.00     3.53
+ATOM   7294  POL STP   239     -26.112 -10.383  -2.941    0.00     3.56
+ATOM   7294  POL STP   239     -25.726  -9.405  -2.754    0.00     3.67
+ATOM   9574  POL STP   239     -25.362  -8.773  -2.686    0.00     3.83
+ATOM   7295  POL STP   239     -24.782  -9.082  -1.921    0.00     3.28
+ATOM   9574  POL STP   239     -24.741  -8.998  -1.919    0.00     3.32
+ATOM   9570  POL STP   239     -25.711  -5.161  -1.341    0.00     5.27
+ATOM   9574  POL STP   239     -25.700  -5.822  -1.949    0.00     5.00
+ATOM   9574 APOL STP   239     -25.612  -5.792  -2.046    0.00     4.93
+ATOM   9574  POL STP   239     -25.716  -5.868  -1.990    0.00     4.98
+ATOM  13202  POL STP   239     -26.721  -6.328  -2.306    0.00     4.78
+ATOM   9574 APOL STP   239     -24.053  -7.849  -0.500    0.00     3.37
+ATOM  13202  POL STP   239     -28.891  -6.330  -2.078    0.00     5.27
+TER
+END

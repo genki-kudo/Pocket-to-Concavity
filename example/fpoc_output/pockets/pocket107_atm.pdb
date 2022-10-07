@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   108:
+HEADER 0  - Pocket Score                      : -0.4227
+HEADER 1  - Drug Score                        : 0.0108
+HEADER 2  - Number of V. Vertices             :    12
+HEADER 3  - Mean alpha-sphere radius          : 3.2163
+HEADER 4  - Mean alpha-sphere SA              : 0.5232
+HEADER 5  - Mean B-factor                     : 0.3837
+HEADER 6  - Hydrophobicity Score              : 7.4286
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 5.2857
+HEADER 9  - Real volume (approximation)       : 77.0191
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 9.0000
+HEADER 12 - Number of apolar alpha sphere     :    10
+HEADER 13 - Proportion of apolar alpha sphere : 0.8333
+ATOM   2846  CD1 TRP C 114      -0.056  -7.534   0.888  1.00 30.03           C 0
+ATOM   2844   CB TRP C 114      -0.592  -5.226  -0.023  1.00 27.94           C 0
+ATOM   2818    O PRO C 100       3.528  -7.567  -2.987  1.00 34.74           O 0
+ATOM   2845   CG TRP C 114      -0.668  -6.703  -0.001  1.00 29.52           C 0
+ATOM   2847  CD2 TRP C 114      -1.386  -7.555  -0.919  1.00 30.46           C 0
+ATOM   2871   CG GLU C 116      -1.215  -5.582  -5.492  1.00 19.50           C 0
+ATOM   2874  OE2 GLU C 116       0.410  -3.828  -5.305  1.00 26.31           O 0
+ATOM   2819   CB PRO C 100       0.846  -9.153  -3.837  1.00 32.99           C 0
+ATOM   2850  CE3 TRP C 114      -2.196  -7.319  -2.041  1.00 31.70           C 0
+ATOM   2816   CA PRO C 100       2.061  -8.607  -4.582  1.00 33.22           C 0
+ATOM   2827   SG CYS C 101       4.549  -9.337  -0.482  1.00 45.55           S 0
+ATOM   2603   CA GLY C  68       1.790  -9.304   4.560  1.00 36.63           C 0
+ATOM   2831    O LYS C 112       0.862  -5.810   4.468  1.00 32.43           O 0
+ATOM   2604    C GLY C  68       1.863 -10.421   3.534  1.00 37.75           C 0
+ATOM   2606    N CYS C  69       3.072 -10.911   3.274  1.00 39.20           N 0
+TER
+END

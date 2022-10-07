@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   190:
+HEADER 0  - Pocket Score                      : -2.7694
+HEADER 1  - Drug Score                        : 0.0285
+HEADER 2  - Number of V. Vertices             :    15
+HEADER 3  - Mean alpha-sphere radius          : 4.6542
+HEADER 4  - Mean alpha-sphere SA              : 0.6954
+HEADER 5  - Mean B-factor                     : 0.3365
+HEADER 6  - Hydrophobicity Score              : 37.5714
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.7143
+HEADER 9  - Real volume (approximation)       : 513.1909
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     1
+HEADER 13 - Proportion of apolar alpha sphere : 0.0667
+ATOM   6511  POL STP   190     -27.278   1.669 -30.975    0.00     4.46
+ATOM  12109  POL STP   190     -27.056  -0.418 -31.703    0.00     4.57
+ATOM  12109  POL STP   190     -27.077  -1.135 -31.721    0.00     4.60
+ATOM  15655 APOL STP   190     -26.206  -1.133 -30.634    0.00     3.90
+ATOM   6507  POL STP   190     -25.836   0.711 -29.610    0.00     3.55
+ATOM  12109  POL STP   190     -25.761  -0.462 -30.083    0.00     3.68
+ATOM  12109  POL STP   190     -25.671  -0.448 -30.074    0.00     3.60
+ATOM  15655  POL STP   190     -25.750  -0.556 -30.070    0.00     3.67
+ATOM  12109  POL STP   190     -26.777   2.285 -35.293    0.00     5.60
+ATOM  14517  POL STP   190     -26.720   1.214 -35.049    0.00     5.31
+ATOM  17425  POL STP   190     -27.320   0.767 -34.929    0.00     5.71
+ATOM  17425  POL STP   190     -27.618   0.695 -34.903    0.00     5.94
+ATOM  14517  POL STP   190     -27.258   0.025 -34.587    0.00     5.59
+ATOM  17425  POL STP   190     -27.437   0.468 -34.810    0.00     5.77
+ATOM  14517  POL STP   190     -25.045   0.384 -34.450    0.00     3.87
+TER
+END

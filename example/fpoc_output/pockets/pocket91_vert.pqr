@@ -1,0 +1,47 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    92:
+HEADER 0  - Pocket Score                      : 0.2388
+HEADER 1  - Drug Score                        : 0.0186
+HEADER 2  - Number of V. Vertices             :    25
+HEADER 3  - Mean alpha-sphere radius          : 3.6897
+HEADER 4  - Mean alpha-sphere SA              : 0.5041
+HEADER 5  - Mean B-factor                     : 0.2741
+HEADER 6  - Hydrophobicity Score              : 28.8571
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.4286
+HEADER 9  - Real volume (approximation)       : 281.2707
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 4.0000
+HEADER 12 - Number of apolar alpha sphere     :     5
+HEADER 13 - Proportion of apolar alpha sphere : 0.2000
+ATOM   8709 APOL STP    92     -17.881   6.874 -34.233    0.00     3.06
+ATOM  13294 APOL STP    92     -18.319   7.668 -34.384    0.00     3.61
+ATOM   8716  POL STP    92     -23.511   8.243 -36.987    0.00     3.19
+ATOM   8716  POL STP    92     -24.657   7.490 -36.188    0.00     4.07
+ATOM   5837  POL STP    92     -22.873   7.534 -34.612    0.00     4.02
+ATOM   5837  POL STP    92     -21.862   7.486 -34.400    0.00     4.03
+ATOM   8716  POL STP    92     -23.199   7.650 -35.639    0.00     3.65
+ATOM  13294  POL STP    92     -20.610   8.034 -34.210    0.00     3.90
+ATOM   9643  POL STP    92     -22.041   7.406 -34.283    0.00     4.06
+ATOM   8718  POL STP    92     -20.736   7.535 -35.152    0.00     3.82
+ATOM   8709 APOL STP    92     -19.321   7.823 -35.629    0.00     4.10
+ATOM   8720  POL STP    92     -19.334   7.813 -35.638    0.00     4.10
+ATOM   8730  POL STP    92     -19.324   7.818 -35.647    0.00     4.10
+ATOM  13294  POL STP    92     -19.059   8.177 -35.091    0.00     4.17
+ATOM   8720  POL STP    92     -19.800   6.758 -35.809    0.00     3.41
+ATOM   8720  POL STP    92     -19.741   6.585 -35.993    0.00     3.27
+ATOM  15601  POL STP    92     -19.723   6.234 -36.135    0.00     3.02
+ATOM   8723  POL STP    92     -19.598   6.541 -36.185    0.00     3.20
+ATOM   8734 APOL STP    92     -19.644   6.264 -36.224    0.00     3.02
+ATOM   8730  POL STP    92     -19.165   7.442 -36.080    0.00     3.76
+ATOM  15601 APOL STP    92     -19.658   6.244 -36.214    0.00     3.01
+ATOM  13303  POL STP    92     -21.058   7.833 -33.643    0.00     3.79
+ATOM  13303  POL STP    92     -21.405   7.984 -32.885    0.00     3.53
+ATOM   8730  POL STP    92     -18.424   8.792 -37.726    0.00     4.22
+ATOM   8730  POL STP    92     -18.254   8.535 -38.170    0.00     4.13
+TER
+END

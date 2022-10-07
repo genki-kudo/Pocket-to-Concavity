@@ -1,0 +1,46 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   208:
+HEADER 0  - Pocket Score                      : -3.0760
+HEADER 1  - Drug Score                        : 0.0692
+HEADER 2  - Number of V. Vertices             :    24
+HEADER 3  - Mean alpha-sphere radius          : 3.5979
+HEADER 4  - Mean alpha-sphere SA              : 0.4429
+HEADER 5  - Mean B-factor                     : 0.5495
+HEADER 6  - Hydrophobicity Score              : 49.2727
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.2727
+HEADER 9  - Real volume (approximation)       : 361.2198
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 6.0000
+HEADER 12 - Number of apolar alpha sphere     :     7
+HEADER 13 - Proportion of apolar alpha sphere : 0.2917
+ATOM   5167  POL STP   208     -16.268 -12.768  -2.922    0.00     3.37
+ATOM   5246  POL STP   208     -15.589 -12.894  -2.645    0.00     3.47
+ATOM   5246  POL STP   208     -16.242 -12.482  -3.444    0.00     3.27
+ATOM   7069  POL STP   208     -14.271 -13.011  -1.578    0.00     3.98
+ATOM  15767  POL STP   208     -14.383 -13.695  -2.130    0.00     3.74
+ATOM  15767  POL STP   208     -14.184 -13.149  -1.594    0.00     3.98
+ATOM   7070 APOL STP   208     -14.028 -12.286  -1.953    0.00     3.45
+ATOM   7070 APOL STP   208     -13.950 -12.367  -1.981    0.00     3.42
+ATOM  15767  POL STP   208     -14.112 -13.131  -1.648    0.00     3.92
+ATOM  15760  POL STP   208     -14.247 -14.920  -2.441    0.00     3.22
+ATOM  15767  POL STP   208     -14.400 -14.463  -2.107    0.00     3.51
+ATOM   5244 APOL STP   208     -16.747 -12.249  -6.079    0.00     3.20
+ATOM   7330 APOL STP   208     -16.796 -12.235  -6.075    0.00     3.22
+ATOM   7330 APOL STP   208     -16.780 -12.226  -6.063    0.00     3.22
+ATOM   7327 APOL STP   208     -16.576 -11.022  -4.811    0.00     3.13
+ATOM   7330  POL STP   208     -16.947 -12.088  -5.497    0.00     3.31
+ATOM  10615  POL STP   208     -17.344 -12.309  -5.767    0.00     3.30
+ATOM  10617 APOL STP   208     -16.948 -12.256  -6.287    0.00     3.13
+ATOM  10615  POL STP   208     -16.971 -12.294  -6.078    0.00     3.23
+ATOM  10615  POL STP   208     -18.295 -13.408  -5.281    0.00     3.04
+ATOM  14049  POL STP   208     -17.906 -12.206  -5.941    0.00     3.11
+ATOM   8804  POL STP   208     -13.172 -14.252   2.175    0.00     5.40
+ATOM  15767  POL STP   208     -13.014 -14.346   1.523    0.00     5.00
+ATOM  15767  POL STP   208     -13.325 -14.158   1.043    0.00     4.74
+TER
+END

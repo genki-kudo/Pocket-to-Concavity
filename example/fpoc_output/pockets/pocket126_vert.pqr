@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   127:
+HEADER 0  - Pocket Score                      : -0.9854
+HEADER 1  - Drug Score                        : 0.0210
+HEADER 2  - Number of V. Vertices             :    15
+HEADER 3  - Mean alpha-sphere radius          : 3.8706
+HEADER 4  - Mean alpha-sphere SA              : 0.5597
+HEADER 5  - Mean B-factor                     : 0.3013
+HEADER 6  - Hydrophobicity Score              : 31.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.1429
+HEADER 9  - Real volume (approximation)       : 345.2137
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     1
+HEADER 13 - Proportion of apolar alpha sphere : 0.0667
+ATOM   5370  POL STP   127      10.544 -10.039 -19.933    0.00     3.05
+ATOM   5370  POL STP   127      11.334 -12.317 -19.946    0.00     4.45
+ATOM   7743  POL STP   127      11.593 -12.987 -20.263    0.00     4.91
+ATOM   5383  POL STP   127      12.130 -12.628 -19.653    0.00     4.75
+ATOM   7743  POL STP   127      12.129 -12.628 -19.653    0.00     4.75
+ATOM   7753  POL STP   127      10.634 -13.481 -20.415    0.00     4.66
+ATOM   7743  POL STP   127      11.916 -13.757 -20.945    0.00     5.46
+ATOM   5415  POL STP   127       9.218 -11.154 -19.276    0.00     3.24
+ATOM   7753  POL STP   127       8.750 -11.445 -19.372    0.00     3.21
+ATOM   7753  POL STP   127       8.605 -11.361 -19.388    0.00     3.14
+ATOM   7684  POL STP   127      12.060 -11.891 -16.614    0.00     3.31
+ATOM   7684  POL STP   127      12.225 -12.014 -16.807    0.00     3.48
+ATOM  10933 APOL STP   127      12.027 -11.888 -16.564    0.00     3.27
+ATOM   7743  POL STP   127      12.086 -12.158 -16.524    0.00     3.30
+ATOM  10936  POL STP   127      11.873 -12.207 -16.175    0.00     3.08
+TER
+END

@@ -1,0 +1,32 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   253:
+HEADER 0  - Pocket Score                      : -4.5148
+HEADER 1  - Drug Score                        : 0.0053
+HEADER 2  - Number of V. Vertices             :     9
+HEADER 3  - Mean alpha-sphere radius          : 5.0050
+HEADER 4  - Mean alpha-sphere SA              : 0.8423
+HEADER 5  - Mean B-factor                     : 0.4116
+HEADER 6  - Hydrophobicity Score              : 8.3333
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 3.6667
+HEADER 9  - Real volume (approximation)       : 468.5169
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     1
+HEADER 13 - Proportion of apolar alpha sphere : 0.1111
+ATOM   1376   CZ ARG B  44       0.880   6.994 -44.884  1.00 44.22           C 0
+ATOM   1377  NH1 ARG B  44       2.007   7.675 -44.708  1.00 44.85           N 0
+ATOM   1385  OD1 ASP B  45       5.839   3.132 -41.571  1.00 32.30           O 0
+ATOM   1378  NH2 ARG B  44       0.307   6.989 -46.086  1.00 45.53           N 0
+ATOM   1373   CG ARG B  44       1.299   4.823 -42.105  1.00 32.19           C 0
+ATOM   1386  OD2 ASP B  45       5.344   5.227 -41.834  1.00 30.86           O 0
+ATOM   1375   NE ARG B  44       0.315   6.319 -43.878  1.00 41.81           N 0
+ATOM   1379    N ASP B  45       3.056   2.674 -39.971  1.00 25.04           N 0
+ATOM   1363    O LEU B  43      -0.793   0.606 -40.700  1.00 24.17           O 0
+ATOM   1369   CA ARG B  44       0.685   2.939 -40.459  1.00 25.89           C 0
+ATOM   1372   CB ARG B  44       0.222   4.148 -41.267  1.00 27.09           C 0
+TER
+END

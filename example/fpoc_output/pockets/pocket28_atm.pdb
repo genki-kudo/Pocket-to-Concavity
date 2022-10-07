@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    29:
+HEADER 0  - Pocket Score                      : 4.3346
+HEADER 1  - Drug Score                        : 0.1267
+HEADER 2  - Number of V. Vertices             :    27
+HEADER 3  - Mean alpha-sphere radius          : 3.3955
+HEADER 4  - Mean alpha-sphere SA              : 0.4082
+HEADER 5  - Mean B-factor                     : 0.3795
+HEADER 6  - Hydrophobicity Score              : 48.9167
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 5.0000
+HEADER 9  - Real volume (approximation)       : 141.7392
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     0
+HEADER 13 - Proportion of apolar alpha sphere : 0.0000
+ATOM   3115   OG SER C 147     -20.841  -1.866  -4.903  1.00 45.07           O 0
+ATOM   2351    O ASN C  34     -24.451  -1.349 -10.670  1.00 66.48           O 0
+ATOM   2346    O ALA C  33     -25.082  -1.748  -7.346  1.00 64.80           O 0
+ATOM   2352   CB ASN C  34     -25.002   0.681  -8.886  1.00 65.65           C 0
+ATOM    815    O VAL A 123     -18.887   2.090  -9.641  1.00 18.02           O 0
+ATOM   2232  CG1 VAL C  17     -21.132  -4.343  -9.733  1.00 29.28           C 0
+ATOM   2219  NE2 HIS C  15     -20.433  -1.732 -12.779  1.00 19.19           N 0
+ATOM    378  CD2 LEU A  55     -23.286   2.393 -12.378  1.00 19.90           C 0
+ATOM   3116    N GLY C 148     -17.721  -0.891  -6.595  1.00 38.63           N 0
+ATOM   3142  CD1 TYR C 151     -15.746  -2.169 -11.686  1.00 20.34           C 0
+ATOM   3132    O VAL C 150     -17.063  -5.773  -9.057  1.00 21.09           O 0
+ATOM   3140   CB TYR C 151     -17.439  -3.974 -12.151  1.00 20.30           C 0
+ATOM   3119    O GLY C 148     -15.714  -0.065  -9.217  1.00 32.35           O 0
+ATOM   3118    C GLY C 148     -15.830  -0.400  -8.035  1.00 33.78           C 0
+ATOM   3114   CB SER C 147     -19.819  -2.604  -5.550  1.00 43.30           C 0
+ATOM    816   CB VAL A 123     -18.384   1.479 -12.674  1.00 17.67           C 0
+ATOM    817  CG1 VAL A 123     -19.804   1.776 -13.074  1.00 14.64           C 0
+ATOM    830    N GLN A 125     -22.655   4.934  -9.351  1.00 22.37           N 0
+ATOM    820   CA PHE A 124     -20.306   4.468  -9.543  1.00 21.03           C 0
+TER
+END

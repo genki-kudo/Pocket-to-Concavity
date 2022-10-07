@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    75:
+HEADER 0  - Pocket Score                      : 0.9856
+HEADER 1  - Drug Score                        : 0.0313
+HEADER 2  - Number of V. Vertices             :    16
+HEADER 3  - Mean alpha-sphere radius          : 3.6013
+HEADER 4  - Mean alpha-sphere SA              : 0.4812
+HEADER 5  - Mean B-factor                     : 0.1364
+HEADER 6  - Hydrophobicity Score              : 36.8889
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.6667
+HEADER 9  - Real volume (approximation)       : 133.4935
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 1.0000
+HEADER 12 - Number of apolar alpha sphere     :     2
+HEADER 13 - Proportion of apolar alpha sphere : 0.1250
+ATOM   1471   OH TYR B  56     -12.284   9.016 -35.084  1.00 16.99           O 0
+ATOM   1438   OG SER B  52     -14.432  10.108 -38.117  1.00 24.23           O 0
+ATOM   2175   CB ALA B 156     -15.239   6.868 -32.688  1.00 14.12           C 0
+ATOM   1442    O GLU B  53     -14.910  13.242 -35.065  1.00 23.82           O 0
+ATOM   2179    O LEU B 157     -18.563   8.966 -31.029  1.00 13.80           O 0
+ATOM   1469  CE2 TYR B  56     -11.993  10.164 -32.975  1.00 15.57           C 0
+ATOM   1436    O SER B  52     -12.459  11.475 -36.038  1.00 23.04           O 0
+ATOM   1131   CD PRO B  12     -15.726   5.931 -36.191  1.00 17.26           C 0
+ATOM   1455    O LEU B  55     -14.812  10.008 -29.729  1.00 16.62           O 0
+ATOM   1470   CZ TYR B  56     -12.044   8.990 -33.711  1.00 15.52           C 0
+ATOM   1130   CG PRO B  12     -14.439   6.341 -36.871  1.00 15.65           C 0
+ATOM   1450    C GLY B  54     -13.977  13.158 -31.106  1.00 19.08           C 0
+ATOM   1449   CA GLY B  54     -14.589  13.738 -32.358  1.00 20.32           C 0
+ATOM   1452    N LEU B  55     -14.825  12.865 -30.139  1.00 18.09           N 0
+ATOM      6  OG1 THR A   7     -21.852  10.929 -36.503  1.00 39.19           O 0
+TER
+END
