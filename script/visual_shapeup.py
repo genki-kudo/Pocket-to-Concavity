@@ -6,7 +6,7 @@ def visual_lb(protein, ligand, outdir):
     cmd.load(ligand)
     cmd.load(protein)
 
-    clsname = glob.glob('./'+outdir+'/cluster/*.pqr')
+    clsname = glob.glob(outdir+'/cluster/*.pqr')
     for cls in clsname:
         cmd.load(cls)
         number = os.path.splitext(os.path.basename(cls))[0][7:]
@@ -19,16 +19,16 @@ def visual_lb(protein, ligand, outdir):
     cmd.bg_color("white")
     #cmd.zoom("cluster")
 
-    cmd.save("./"+outdir+"/visual_lb.pse")
+    cmd.save(outdir+"/visual_lb.pse")
     cmd.delete("all")
 
 def visual_lf(protein, outdir):
-    cmd.load('./'+outdir+'/newshape_pocket.pqr')
+    cmd.load(outdir+'/newshape_pocket.pqr')
     cmd.color("red", "newshape_pocket")
     cmd.show("mesh", "newshape_pocket")
     cmd.show("spheres", "newshape_pocket")
     cmd.hide("sticks", "newshape_pocket")
-    cmd.load('./'+outdir+'/default_pocket.pqr')
+    cmd.load(outdir+'/default_pocket.pqr')
     cmd.color("gray70", "default_pocket")
     cmd.show("mesh", "default_pocket")
     cmd.show("spheres", "default_pocket")
@@ -38,5 +38,5 @@ def visual_lf(protein, outdir):
     cmd.bg_color("white")
     cmd.zoom("default_pocket")
     
-    cmd.save("./"+outdir+"/visual_lf.pse")
+    cmd.save(outdir+"/visual_lf.pse")
     cmd.delete("all")

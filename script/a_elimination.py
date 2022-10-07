@@ -3,7 +3,7 @@ from script.basic_func import t_file
 import numpy as np
 
 def elim(defpoc, outdir):
-    nshape = './'+outdir+'/newshape_pocket.pqr'
+    nshape = outdir+'/newshape_pocket.pqr'
     t_file(nshape)
     dictionary={}
     poc1 = open(defpoc,'r').readlines()

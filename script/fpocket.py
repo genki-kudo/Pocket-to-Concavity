@@ -4,14 +4,14 @@ from script.basic_func import t_file, vec_xyz
 
 bash=lambda x:run(x,shell=True)
 
-def fpoc_lf(protein, pro_name, rank, outdir):
-    bash('fpocket -f '+protein)
-    bash('mv ./'+pro_name+'_out/ fpoc_output/')
+def fpoc_lf(protein, pro_name, rank, outdir,logfile):
+    bash('fpocket -f '+protein+' >> '+outdir+"/"+logfile)
+    bash('mv '+pro_name+'_out/ fpoc_output/')
     inipoc = 'fpoc_output/'+pro_name.split("/")[-1]+'_pockets.pqr'
-    defpoc = './'+outdir+'/default_pocket.pqr'
+    defpoc = outdir+'/default_pocket.pqr'
     t_file(defpoc)
     inp  = open(inipoc,'r').readlines()
-    dpoc = open(defpoc,'r').readlines()
+    dpoc=[]
     for line in inp:
         if line[0:6]!="ATOM  ":continue
         if int(line[22:28])<=int(rank):
@@ -21,11 +21,11 @@ def fpoc_lf(protein, pro_name, rank, outdir):
     tmp = open(defpoc,'w').writelines(dpoc)
     return defpoc
 
-def fpoc_lb(protein, pro_name, ligand, distance, outdir):
-    bash('fpocket -f '+protein+' -i 1')
-    bash('mv ./'+pro_name+'_out/ fpoc_output/')
+def fpoc_lb(protein, pro_name, ligand, distance, outdir, logfile):
+    bash('fpocket -f '+protein+' -i 1 >> '+outdir+"/"+logfile)
+    bash('mv '+pro_name+'_out/ fpoc_output/')
     inipoc = 'fpoc_output/'+pro_name.split("/")[-1]+'_pockets.pqr'
-    defpoc = './'+outdir+'/default_pocket.pqr'
+    defpoc = outdir+'/default_pocket.pqr'
     t_file(defpoc)
     near = []
     poc = open(inipoc,'r').readlines()
@@ -37,7 +37,7 @@ def fpoc_lb(protein, pro_name, ligand, distance, outdir):
         if float(min(dislist))<=float(distance):
             near.append(line[22:28])
     near_list = set(near)
-    dpoc = open(defpoc,'r').readlines()
+    dpoc = []
     for line in poc:
         if (line[22:28]) in near_list:
             dpoc.append(line)

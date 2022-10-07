@@ -1,6 +1,7 @@
 import sys
 import os
 import argparse
+import time
 from subprocess import run
 from script.fpocket import fpoc_lf,fpoc_lb
 from script.a_elimination import elim
@@ -10,36 +11,33 @@ from script.basic_func import dict_pdb_noh, clean_dir,input_process
 
 bash=lambda x:run(x,shell=True)
 
-def main_exec(outdir):
+def main_exec():
     
     input_list=input_process()
     
-    method,protein,ligand,distance,rank,pro_name,clustering = input_list
+    method,protein,ligand,distance,rank,pro_name,clustering,threshold,logfilename,s = input_list
 
-    clean_dir(outdir)
+    outdir = os.path.dirname(os.path.abspath(protein))+"/p2c_output"    
+
+    clean_dir(outdir+"/")
     clean_dir(pro_name+'_out/')
     clean_dir('fpoc_output/')
 
+    bash("mkdir "+outdir)
+    tmp=open(outdir+"/"+logfilename,"w").write(s)
+
+
     if method == 'LF':
-        print("\n#### Ligand Free mode selected####\n")
-        bash("mkdir "+outdir)
-        print(">> fpocket calculation started")
-        defpoc = fpoc_lf(protein, pro_name, rank, outdir)
-        print("\n>> alpha-spheres elimination started")
+        defpoc = fpoc_lf(protein, pro_name, rank, outdir,logfilename)
         nshape = elim(defpoc, outdir)
         visual_lf(protein, outdir)
     elif method == 'LB':
-        print("\n#### Ligand Bound mode selected ####\n")
-        bash("mkdir "+outdir)
         lig_array = dict_pdb_noh(ligand)
-        print(">> fpocket calculation started")
-        defpoc = fpoc_lb(protein, pro_name, lig_array, distance, outdir)      
-        print("\n>> alpha-spheres elimination started")
+        defpoc = fpoc_lb(protein, pro_name, lig_array, distance, outdir, logfilename)      
         nshape = elim(defpoc, outdir)
         visual_lf(protein, outdir)
         nextpoc = next_poc(nshape, ligand, outdir)
-        print("\n>> empty site identification started")
-        clus_poc(clustering, nextpoc, outdir)
+        clus_poc(clustering, nextpoc, threshold, outdir)
         visual_lb(protein, ligand, outdir)
     else:
         sys.exit()

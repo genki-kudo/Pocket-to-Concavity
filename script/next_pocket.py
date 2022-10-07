@@ -8,14 +8,14 @@ from script.basic_func import appr, lat_gen, t_file
 bash = lambda x:run(x,shell=True)
 
 def next_poc(nshape, ligand, outdir):
-    lat_gen(nshape, './'+outdir+'/poc_lat.pdb')
-    lat_gen(ligand, './'+outdir+'/lig_lat.pdb')
-    poclat = './'+outdir+'/poc_lat.pdb'
-    liglat = './'+outdir+'/lig_lat.pdb'
-    t_file('./'+outdir+'/poc_surp.pdb')
-    surp = './'+outdir+'/poc_surp.pdb'
-    t_file('./'+outdir+'/poc_next.pqr')
-    next = './'+outdir+'/poc_next.pqr'
+    lat_gen(nshape, outdir+'/poc_lat.pdb')
+    lat_gen(ligand, outdir+'/lig_lat.pdb')
+    poclat = outdir+'/poc_lat.pdb'
+    liglat = outdir+'/lig_lat.pdb'
+    t_file(outdir+'/poc_surp.pdb')
+    surp = outdir+'/poc_surp.pdb'
+    t_file(outdir+'/poc_next.pqr')
+    next = outdir+'/poc_next.pqr'
     sur=[]
     pla = open(poclat,"r").readlines()
     lla = open(liglat,"r").readlines()
@@ -49,29 +49,29 @@ def next_poc(nshape, ligand, outdir):
     tmp=open(next,"w").writelines(pro)
     return next
 
-def clus_poc(clustering, next, outdir):
+def clus_poc(clustering, next,threshold, outdir):
     bash('mkdir '+outdir+'/cluster')
     if clustering == 'DBSCAN':
         print("DBSCAN start")
-        t_file('./'+outdir+'/cluster/cluster_all.pqr')
-        t_file('./'+outdir+'/cluster/clus.pqr')
+        t_file(outdir+'/cluster/cluster_all.pqr')
+        t_file(outdir+'/cluster/clus.pqr')
         pro = open(next,"r").readlines()
         data =[[float(i[30:38]), float(i[38:46]), float(i[46:54])] for i in pro]
-        db = DBSCAN(eps=2, min_samples=1).fit(data)
+        db = DBSCAN(eps=threshold, min_samples=1).fit(data)
         labels = list(db.labels_)
-        cls = open('./'+outdir+'/cluster/clus.pqr',"r").readlines()
+        cls = open(outdir+'/cluster/clus.pqr',"r").readlines()
         for i in range(len(data)):
             p = pro[i]
             if str(labels[i]) != str(-1) and labels.count(int(labels[i])) >= 5:
                 cls.append(p[0:20]+str('{:5}'.format(labels[i]))+p[27:])
-        tmp=open('./'+outdir+'/cluster/clus.pqr',"w").writelines(cls)
-        data = open('./'+outdir+'/cluster/clus.pqr',"r").readlines()
+        tmp=open(outdir+'/cluster/clus.pqr',"w").writelines(cls)
+        data = open(outdir+'/cluster/clus.pqr',"r").readlines()
         data.sort(key=lambda data: data[21:26])
         
-        cls = open('./'+outdir+'/cluster/cluster_all.pqr','r').readlines()
+        cls = open(outdir+'/cluster/cluster_all.pqr','r').readlines()
         for i in range(len(data)):
             cls.append(data[i])
-        tmp=open('./'+outdir+'/cluster/cluster_all.pqr',"w").writelines(cls)        
+        tmp=open(outdir+'/cluster/cluster_all.pqr',"w").writelines(cls)        
         id = -1
         for line in cls:
             if int(line[21:26])==id:
@@ -82,14 +82,14 @@ def clus_poc(clustering, next, outdir):
                 t_file(outdir+"/cluster/cluster"+str(id)+".pqr")
                 with open(outdir+"/cluster/cluster"+str(id)+".pqr",'a')as tmp:
                     print(line, end='', file=tmp)
-        bash('rm ./'+outdir+'/cluster/clus.pqr')
-        bash('rm ./'+outdir+'/cluster/cluster_all.pqr')
+        bash('rm '+outdir+'/cluster/clus.pqr')
+        bash('rm '+outdir+'/cluster/cluster_all.pqr')
 
-    elif clustering == 'N' or clustering == 'fpocket-clustering':
+    elif clustering == 'SINGLE':
         #choose the second clustering of fpocket-clustering-method
         #it is the cnetroid linkage clustering
         #print("fpoc-clustering start")
-        second_thre = 4.5
+        second_thre = threshold
         POINTS = []
         for line in open(next,'r').readlines():
             POINTS.append([float(line[30:38]),float(line[38:46]),float(line[46:54])])

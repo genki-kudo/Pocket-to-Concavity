@@ -5,31 +5,68 @@ import shutil
 import numpy as np
 import pandas as pd
 import argparse
+import datetime
 
 bash=lambda x:run(x,shell=True)
 
 #input_discription
 def input_process():
     
-    input_list=["" for i in range(7)]
+    input_list=[0 for i in range(9)]
 
-    parser = argparse.ArgumentParser(prog='pocket shapeup')
+    parser = argparse.ArgumentParser(prog='p2c')
     parser.add_argument('-m', '--method', nargs=1, required=True, help='select mode of P2C (LF, LB)')
     parser.add_argument('-p', '--protein', nargs=1, required=True, help='specify protein file path (format:PDB)')
-    parser.add_argument('-l', '--ligand', nargs=1, default="None", help='specify ligand file path (format:PDB). Only use this argument when you select "LB" mode.')
+    parser.add_argument('-l', '--ligand', nargs=1, default=["None"], help='specify ligand file path (format:PDB). Only use this argument when you select "LB" mode.')
     parser.add_argument('-d', '--distance', nargs=1, type=float, default=[1.8], help='specify distance of include pocket. Only use this argument when you select "LB".')
     parser.add_argument('-r', '--rank', nargs=1, type=int, default=[1], help='specify druggability rank by fpocket of include pocket. Only use this argument when you select "LF".')
-    parser.add_argument('-c', '--clustering', nargs=1, default="None", help='select "DBSCAN" if you do not use fpocket-clustering-method in empty site identification. Only use this argument when you select "LB".')
+    parser.add_argument('-c', '--clustering', nargs=1, default=["SINGLE"], help='select "DBSCAN" if you do not use fpocket-clustering-method in empty site identification. Only use this argument when you select "LB".')
+    parser.add_argument('-t', '--threshold', nargs=1, type=float, default=[-1], help='threshold of clustering. (order is 1^-10m)')
+    parser.add_argument('-o', '--logfilename', nargs=1, default=["p2c.log"], help='specify logfile name (default:p2c.log)')
 
     args = parser.parse_args()
     
-    input_list[0] = str(args.method[0])#method
+    input_list[0] = str(args.method[0]).upper()#method
     input_list[1] = str(args.protein[0])#protein
     input_list[2] = str(args.ligand[0])#ligand
     input_list[3] = str(args.distance[0])#distance
     input_list[4] = str(args.rank[0])#rank
     input_list[5] = os.path.splitext(input_list[1])[0]#pro_name
-    input_list[6] = str(args.clustering[0])#clustering
+    input_list[6] = str(args.clustering[0]).upper()#clustering
+    input_list[7] = float(args.threshold[0])
+    input_list[8] = str(args.logfilename[0])
+
+    #confirm command input
+    if input_list[0]!="LF" and input_list[0]!="LB":
+        print("fatal error! method select only LF or LB. ")
+        exit()
+    if input_list[1][-4:]!='.pdb' :
+        print("fatal error! protein select only .pdb format. ")
+        exit()
+    if input_list[2][-4:]!='.pdb' and input_list[0]=='LB':
+        print("fatal error! ligand select only .pdb format. ")
+        exit()
+    clustering_m = {'DBSCAN':2.0, 'SINGLE':4.5}
+    if input_list[6]not in clustering_m.keys():
+        print("fatal error! P2C does not have clustering-method["+input_list[6]+"]. ")
+        exit()
+    if input_list[7]==-1:
+        input_list[7]=clustering_m[input_list[6]]
+
+    # output
+    s=""
+    s+=str(datetime.datetime.now())+"\n"
+    s+="Selected Mode\n>> "+input_list[0]+"\n"
+    s+="Selected PDB protein file\n>> "+os.path.abspath(input_list[1])+"\n"
+    s+="Selected PDB ligand file\n>> "+os.path.abspath(input_list[2])+"\n"
+    if input_list[0] == 'LB':
+        s+="Distance of include pocket\n>> "+input_list[3]+"\n"
+        s+="Clustering method in empty sites identification\n>> "+input_list[5]+"\n"
+        s+="Clustering threshold in empty sites identification\n>> "+input_list[6]+"\n"
+    if input_list[0] == 'LF':
+        s+="Druggability rank of include pocket\n>> "+input_list[4]+"\n"
+    print(s)
+    input_list.append(s)
 
     return input_list
 
@@ -134,3 +171,11 @@ def lat_gen(inputname, outputname):
             print('HETATM'+num_pdb+'      PLA A   1     '+one_x+' '+one_y+' '+one_z+'  1.00 10.00           H', file=poc)
     bash('rm lat.pdb')
     bash('rm lat_ex.txt')
+
+def logo():
+    print('        PPPPPPPPP/     22222222/      CCCCCCCC/')
+    print('       PP/     PP/           22/     CC/       ')
+    print('      PPPPPPPPP/     22222222/      CC/')
+    print('     PP/            22/            CC/       ')
+    print('    PP/            22222222/      CCCCCCCC/')
+    print('')
