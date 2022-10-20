@@ -52,17 +52,24 @@ optional arguments:
   -p PROTEIN, --protein PROTEIN
                         specify protein file (format:PDB)
   -l LIGAND, --ligand LIGAND
-                        specify ligand file (format:PDB). Use this argument only when you select "LB" mode.
+                        specify ligand file (format:PDB). Use this argument
+                        only when you select "LB" mode.
   -d DISTANCE, --distance DISTANCE
-                        specify the distance of included pocket. Use this argument only when you select "LB" mode.
-  -r RANK, --rank RANK  
-                        specify the druggability rank of included pocket predicted by fpocket. Use this argument only when you select "LF" mode.
+                        specify the distance of included pocket. Use this
+                        argument only when you select "LB" mode.
+  -r RANK, --rank RANK  specify the druggability rank of included pocket
+                        predicted. Use this argument only when you select "LF"
+                        mode.
   -c CLUSTERING, --clustering CLUSTERING
-                        select "DBSCAN" if you do not use fpocket-clustering-
-                        method in empty site identification. Only use this
-                        argument when you select "LB".
+                        default clustering is single-linkage
+                        clustering(threshold 4.5A). You can select clustering
+                        methods; single-linkage, DBSCAN. (Other clustering
+                        methods will be available.) Use this argument only
+                        when you select "LB" mode.
   -t THRESHOLD, --threshold THRESHOLD
                         specify threshold of clustering. (order is 1^-10m)
+                        default threshold of single-linkage is 4.5A and that
+                        of DBSCAN is 2.0A.
   -o LOGFILENAME, --logfilename LOGFILENAME
                         specify logfile name (default:p2c.log)
 ~~~
@@ -74,7 +81,7 @@ $ p2c -m LF -p protein.pdb -r 1
 
 ### **example of LB mode**
 ~~~
-$ p2c -m LB -p protein.pdb -l ligand.pdb -d 3.0
+$ p2c -m LB -p protein.pdb -l ligand.pdb -d 5.0
 ~~~
 
 ## Output files
