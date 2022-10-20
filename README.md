@@ -85,29 +85,30 @@ $ p2c -m LB -p protein.pdb -l ligand.pdb -d 5.0
 ~~~
 
 ## Output files
-All output files are stored in ```./fpoc_output/``` or ```./p2c_output/```.  
+All output files are stored in ```fpoc_output/``` and ```p2c_output/```.  
 ```fpoc_output``` contains the results of fpocket calculation.  
-```p2c_output``` contains the files in follows.  
-* **default_pocket.pqr**: alpha-spheres before elimination process
+```p2c_output``` contains the files as follows.  
+* **default_pocket.pqr**: alpha-spheres of selected pocket in pocket selection (before elimination process)
 * **newshape_pocket.pqr**: alpha-spheres after elimination process
-* **visual_lf.pse**: pymol session file of LF mode results  
+* **visual_lf.pse**: PYMOL session file of LF mode results
+* **p2c.log**: log file
 
 In LB mode, additional output files are stored in this directory.  
 * **lig_lat.pdb**: lattice representation of the ligand
 * **poc_lat.pdb**: lattice representation of the newshape_pocket
 * **poc_surp.pdb**: lattice of "(poc_lat.pdb)-(lig_lat.pdb)"
-* **poc_next.pqr**: alpha-spheres that not overlapped to the ligand
-* **cluster/**: DBSCAN clustering results of "poc_next.pqr"
+* **poc_next.pqr**: alpha-spheres that did not overlap with the ligand
+* **cluster/**: clustering results of "poc_next.pqr"
 * **visual_lb.pse**: pymol session file of LB mode results 
 
 ## visualization
 You can view the results of P2C if the process terminated successfully.  
 ~~~
-$ pymol visual_lf.pse
+$ pymol ./p2c_output/visual_lf.pse
 ~~~
 or
 ~~~
-$ pymol visual_lb.pse
+$ pymol ./p2c_output/visual_lb.pse
 ~~~
 
 
