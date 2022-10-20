@@ -13,6 +13,6 @@ if __name__ == '__main__':
     logo()
     main_exec()
 print('-------------------')
-print('    P2C finished   ')
+print('   P2C finished    ')
 print('-------------------')
 

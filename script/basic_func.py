@@ -15,13 +15,13 @@ def input_process():
     input_list=[0 for i in range(9)]
 
     parser = argparse.ArgumentParser(prog='p2c')
-    parser.add_argument('-m', '--method', nargs=1, required=True, help='select mode of P2C (LF, LB)')
-    parser.add_argument('-p', '--protein', nargs=1, required=True, help='specify protein file path (format:PDB)')
-    parser.add_argument('-l', '--ligand', nargs=1, default=["None"], help='specify ligand file path (format:PDB). Only use this argument when you select "LB" mode.')
-    parser.add_argument('-d', '--distance', nargs=1, type=float, default=[1.8], help='specify distance of include pocket. Only use this argument when you select "LB".')
-    parser.add_argument('-r', '--rank', nargs=1, type=int, default=[1], help='specify druggability rank by fpocket of include pocket. Only use this argument when you select "LF".')
-    parser.add_argument('-c', '--clustering', nargs=1, default=["SINGLE"], help='select "DBSCAN" if you do not use fpocket-clustering-method in empty site identification. Only use this argument when you select "LB".')
-    parser.add_argument('-t', '--threshold', nargs=1, type=float, default=[-1], help='threshold of clustering. (order is 1^-10m)')
+    parser.add_argument('-m', '--method', nargs=1, required=True, help='select mode (LF, LB)')
+    parser.add_argument('-p', '--protein', nargs=1, required=True, help='specify protein file (format:PDB)')
+    parser.add_argument('-l', '--ligand', nargs=1, default=["None"], help='specify ligand file (format:PDB). Use this argument only when you select "LB" mode.')
+    parser.add_argument('-d', '--distance', nargs=1, type=float, default=[1.8], help='specify the distance of included pocket. Use this argument only when you select "LB" mode.')
+    parser.add_argument('-r', '--rank', nargs=1, type=int, default=[1], help='specify the druggability rank of included pocket predicted. Use this argument only when you select "LF" mode.')
+    parser.add_argument('-c', '--clustering', nargs=1, default=["SINGLE"], help='default clustering is single-linkage clustering(threshold 4.5A).\nYou can select clustering methods; single-linkage, DBSCAN. (Other clustering methods will be available.)\nUse this argument only when you select "LB" mode.')
+    parser.add_argument('-t', '--threshold', nargs=1, type=float, default=[-1], help='specify threshold of clustering. (order is 1^-10m)\ndefault threshold of single-linkage is 4.5A and that of DBSCAN is 2.0A.')
     parser.add_argument('-o', '--logfilename', nargs=1, default=["p2c.log"], help='specify logfile name (default:p2c.log)')
 
     args = parser.parse_args()
