@@ -113,4 +113,7 @@ $ pymol ./p2c_output/visual_lb.pse
 
 
 
+We will update P2C and the options.
+
+
 
