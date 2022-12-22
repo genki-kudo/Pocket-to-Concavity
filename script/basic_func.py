@@ -20,7 +20,7 @@ def input_process():
     parser.add_argument('-l', '--ligand', nargs=1, default=["None"], help='specify ligand file (format:PDB). Use this argument only when you select "LB" mode.')
     parser.add_argument('-d', '--distance', nargs=1, type=float, default=[1.8], help='specify the distance of included pocket. Use this argument only when you select "LB" mode.')
     parser.add_argument('-r', '--rank', nargs=1, type=int, default=[1], help='specify the druggability rank of included pocket predicted. Use this argument only when you select "LF" mode.')
-    parser.add_argument('-c', '--clustering', nargs=1, default=["SINGLE"], help='default clustering is single-linkage clustering(threshold 4.5A).\nYou can select clustering methods; single-linkage, DBSCAN. (Other clustering methods will be available.)\nUse this argument only when you select "LB" mode.')
+    parser.add_argument('-c', '--clustering', nargs=1, default=["CENTROID"], help='default clustering is single-linkage clustering(threshold 4.5A).\nYou can select clustering methods; single-linkage, DBSCAN. (Other clustering methods will be available.)\nUse this argument only when you select "LB" mode.')
     parser.add_argument('-t', '--threshold', nargs=1, type=float, default=[-1], help='specify threshold of clustering. (order is 1^-10m)\ndefault threshold of single-linkage is 4.5A and that of DBSCAN is 2.0A.')
     parser.add_argument('-o', '--logfilename', nargs=1, default=["p2c.log"], help='specify logfile name (default:p2c.log)')
 
@@ -46,7 +46,7 @@ def input_process():
     if input_list[2][-4:]!='.pdb' and input_list[0]=='LB':
         print("fatal error! ligand select only .pdb format. ")
         exit()
-    clustering_m = {'DBSCAN':2.0, 'SINGLE':4.5}
+    clustering_m = {'DBSCAN':2.0, 'CENTROID':4.5}
     if input_list[6]not in clustering_m.keys():
         print("fatal error! P2C does not have clustering-method["+input_list[6]+"]. ")
         exit()
@@ -110,8 +110,7 @@ def dist_cf(vec_a, vec_b, d_min):
     distance = float(np.linalg.norm(vec_a - vec_b))
     if distance <= d_min:
         return distance
-    else:
-        return d_min
+    else: return d_min
 
 #truncated file  
 def t_file(filename):
@@ -140,7 +139,8 @@ def lat_gen(inputname, outputname):
             llx = appr(lxi)
             lly = appr(lyi)
             llz = appr(lzi)
-            hetatm='HETATM'+str(num_pdb)+'      PLA A   1   '+str(llx).rjust(8)+str(lly).rjust(8)+str(llz).rjust(8)+'  1.00 10.00           H\n'
+            hetatm='HETATM'+str(num_pdb)+'      PLA A   1    '+str(llx).rjust(8)+str(lly).rjust(8)+str(llz).rjust(8)+'  1.00 10.00           H\n'
+            print(hetatm)
             lat.append(hetatm)
     tmp = open('lat.pdb','w').writelines(lat)
     t_file('lat_ex.txt')
@@ -168,7 +168,7 @@ def lat_gen(inputname, outputname):
         one_y = '{:7.03f}'.format(float(item[1]))
         one_z = '{:7.03f}'.format(float(item[2]))
         with open (outputname,'a')as poc:
-            print('HETATM'+num_pdb+'      PLA A   1     '+one_x+' '+one_y+' '+one_z+'  1.00 10.00           H', file=poc)
+            print('HETATM'+num_pdb+'      PLA A   1    '+one_x+' '+one_y+' '+one_z+'  1.00 10.00           H', file=poc)
     bash('rm lat.pdb')
     bash('rm lat_ex.txt')
 
