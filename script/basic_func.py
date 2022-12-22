@@ -140,7 +140,6 @@ def lat_gen(inputname, outputname):
             lly = appr(lyi)
             llz = appr(lzi)
             hetatm='HETATM'+str(num_pdb)+'      PLA A   1    '+str(llx).rjust(8)+str(lly).rjust(8)+str(llz).rjust(8)+'  1.00 10.00           H\n'
-            print(hetatm)
             lat.append(hetatm)
     tmp = open('lat.pdb','w').writelines(lat)
     t_file('lat_ex.txt')
