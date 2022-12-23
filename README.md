@@ -4,10 +4,20 @@
 **P2C is a tool for refinement of Protein-Ligand binding site shape from Fpocket.**  
 There are two main modes, **Ligand-Free(LF) mode** and **Ligand-Bound(LB) mode**. LF mode provides the shape of the deep and druggable concavity where the core scaffold can bind. LB mode searches deep concavity around the bound ligand.
 
+## Environments
+P2C is available on Linux OS. (We tested on Ubuntu 20.04.01)
+
 ## Requirements
 * **Fpocket2**  
   You can install fpocket2 in the following URL.
   https://sourceforge.net/projects/fpocket/files/latest/download
+  
+  ```
+  cd /path/to/fpocket
+  make
+  make install
+  ```
+  
   (If you try to install fpocket in new linux distributions, you can have an error during ```make```. In that case, change ```$(LINKER) $(LFLAGS) $^ -o $@``` the makefile to ```$(LINKER) $^ -o $@ $(LFLAGS)```. More detail of the error is referred in https://sourceforge.net/p/fpocket/mailman/message/28785185/.)  
   
   set PATH in this fpocket directory.  
