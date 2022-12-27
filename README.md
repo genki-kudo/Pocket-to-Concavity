@@ -4,17 +4,28 @@
 **P2C is a tool for refinement of Protein-Ligand binding site shape from Fpocket.**  
 There are two main modes, **Ligand-Free(LF) mode** and **Ligand-Bound(LB) mode**. LF mode provides the shape of the deep and druggable concavity where the core scaffold can bind. LB mode searches deep concavity around the bound ligand.
 
+## Environments
+P2C is available on Linux OS. (We tested on Ubuntu 20.04.01)
+
 ## Requirements
 * **Fpocket2**  
-  You can install fpocket2 in the following URL.
-  https://sourceforge.net/projects/fpocket/files/latest/download
-  (If you try to install fpocket in new linux distributions, you can have an error during ```make```. In that case, change ```$(LINKER) $(LFLAGS) $^ -o $@``` the makefile to ```$(LINKER) $^ -o $@ $(LFLAGS)```. More detail of the error is referred in https://sourceforge.net/p/fpocket/mailman/message/28785185/.)  
+  You can get fpocket2.tar.gz in the following URL.
+  https://sourceforge.net/projects/fpocket/files/latest/download.
+  And then, you unzip this file and make install.set PATH in this fpocket directory.
+  ```
+  tar -xvf fpocket2.tar.gz
+  cd fpocket2/
+  make
+  make install
   
-  set PATH in this fpocket directory.  
-  ~~~
-  $ export PATH=$PATH:/path/to/fpocket/directory
-  ~~~
- 
+  #set PATH in this fpocket directory.
+  echo "export PATH=\$PATH:`pwd`/bin" >> ~/.bashrc
+  source ~/.bashrc
+  ```
+  (If you try to install fpocket in new linux distributions, you can have an error during ```make```. In that case, change ```$(LINKER) $(LFLAGS) $^ -o $@``` the makefile to ```$(LINKER) $^ -o $@ $(LFLAGS)```. 
+  More detail of the error is referred in https://sourceforge.net/p/fpocket/mailman/message/28785185/.)  
+  
+
 * **Python**  
   We tested P2C on python3.7.10  
   Several modules are needed in addition to default modules.
@@ -113,6 +124,8 @@ $ pymol ./p2c_output/visual_lb.pse
 
 
 
+## others
+In the present P2C(2022/12), fpocket is used as the generation tool of alpha-spheres because this tool is free licence software. In ideal, P2C is applicable to other tools that utilize alpha-spheres algorithms (ex. SiteFinder). Actually, our usecase in supplementary materials describes the application results of Sitefinder's alpha-spheres. Note that the parameters in P2C is needed to tune for application to other tools. 
 We will update P2C and the options.
 
 
