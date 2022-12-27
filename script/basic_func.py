@@ -61,8 +61,8 @@ def input_process():
     s+="Selected PDB ligand file\n>> "+os.path.abspath(input_list[2])+"\n"
     if input_list[0] == 'LB':
         s+="Distance of include pocket\n>> "+input_list[3]+"\n"
-        s+="Clustering method in empty sites identification\n>> "+input_list[5]+"\n"
-        s+="Clustering threshold in empty sites identification\n>> "+input_list[6]+"\n"
+        s+="Clustering method in empty sites identification\n>> "+input_list[6]+"\n"
+        s+="Clustering threshold in empty sites identification\n>> "+input_list[7]+"\n"
     if input_list[0] == 'LF':
         s+="Druggability rank of include pocket\n>> "+input_list[4]+"\n"
     print(s)

@@ -85,7 +85,7 @@ def clus_poc(clustering, next,threshold, outdir):
         bash('rm '+outdir+'/cluster/clus.pqr')
         bash('rm '+outdir+'/cluster/cluster_all.pqr')
 
-    elif clustering == 'SINGLE':
+    elif clustering == 'CENTROID':
         #choose the second clustering of fpocket-clustering-method
         #it is the cnetroid linkage clustering
         #print("fpoc-clustering start")
