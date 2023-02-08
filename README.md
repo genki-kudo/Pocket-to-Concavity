@@ -1,17 +1,45 @@
-# Pocket to Concavity (P2C)
+# **Pocket to Concavity (P2C)**
 ![図1](https://user-images.githubusercontent.com/96423408/180365403-939d72f2-3268-4398-8ec7-b33bd0732c14.png)
 
-**P2C is a tool for refinement of Protein-Ligand binding site shape from Fpocket.**  
-There are two main modes, **Ligand-Free(LF) mode** and **Ligand-Bound(LB) mode**. LF mode provides the shape of the deep and druggable concavity where the core scaffold can bind. LB mode searches deep concavity around the bound ligand.
+**P2C is a tool for the refinement of Protein-Ligand binding site shape from alpha-spheres.**  
+There are two main modes, **Ligand-Free(LF) mode** and **Ligand-Bound(LB) mode**.
 
-## Environments
-P2C is available on Linux OS. (We tested on Ubuntu 20.04.01)
+* ### Ligand-Free (LF) mode
+  LF mode provides the shape of the deep and druggable concavity where the core scaffold can bind.
+* ### Ligand-Bound (LB) mode
+  LB mode searches deep concavity around the bound ligand.
+
+# INSTALLATION
+**You can use P2C in Linux OS.** (We tested on the Ubuntu20.04LTS.)
 
 ## Requirements
+
+* **Python**  
+  We tested P2C on python3.7.10.  
+  Several modules are needed in addition to default modules.
+  * numpy(1.21.5)
+  * pandas(1.3.5)
+  * scikit-learn(1.0.2)
+  * scipy(1.7.0)
+  * pymol(open-source)
+
+  This exvironment is built as following commands if you have anaconda in the OS.  
+  (you can download and install Anaconda in the URL-> https://www.anaconda.com/download/ )
+  ```
+  conda create -n p2c_env python==3.7.10
+  conda activate p2c_env
+  
+  conda numpy==1.21.5
+  conda pandas==1.3.5
+  conda scikit-learn==1.0.2
+  conda scipy==1.7.3
+  conda install -c conda-forge pymol-open-source
+  ```
+
 * **Fpocket2**  
   You can get fpocket2.tar.gz in the following URL.
-  https://sourceforge.net/projects/fpocket/files/latest/download.
-  And then, you unzip this file and make install.set PATH in this fpocket directory.
+  https://sourceforge.net/projects/fpocket/files/latest/download.  
+  And then, you unzip this file and make install. Set PATH in this fpocket directory.
   ```
   tar -xvf fpocket2.tar.gz
   cd fpocket2/
@@ -22,31 +50,24 @@ P2C is available on Linux OS. (We tested on Ubuntu 20.04.01)
   echo "export PATH=\$PATH:`pwd`/bin" >> ~/.bashrc
   source ~/.bashrc
   ```
-  (If you try to install fpocket in new linux distributions, you can have an error during ```make```. In that case, change ```$(LINKER) $(LFLAGS) $^ -o $@``` the makefile to ```$(LINKER) $^ -o $@ $(LFLAGS)```. 
-  More detail of the error is referred in https://sourceforge.net/p/fpocket/mailman/message/28785185/.)  
-  
+  If you try to install fpocket in new linux distributions, you can have an error during ```make```.  
+  In that case, change ```$(LINKER) $(LFLAGS) $^ -o $@``` the makefile to ```$(LINKER) $^ -o $@ $(LFLAGS)```.  
+  More detail of the error is referred in https://sourceforge.net/p/fpocket/mailman/message/28785185/. 
 
-* **Python**  
-  We tested P2C on python3.7.10  
-  Several modules are needed in addition to default modules.
-  * numpy(1.21.2)
-  * pandas(2.8.2)
-  * sklearn(1.0.2)
-  * scipy(1.7.0)
-  * pymol(2.5.2)
+* **P2C**  
+  Download this source code, and set PATH in this directory.  
+  ```
+  git clone https://github.com/genki-kudo/Pocket-to-Concavity  
+  cd Pocket-to-Concavity/
+  echo "export PATH=\$PATH:`pwd`/bin" >> ~/.bashrc
+  source ~/.bashrc
+  ```
 
-## Installation
-Download this source code from Github, and set PATH in this directory.  
-~~~
-$ git clone https://github.com/genki-kudo/Pocket-to-Concavity  
-$ export PATH=$PATH:/path/to/source/directory
-~~~
-
-## Preparation of input files
-* **Ligand-Free(LF) mode**  
+# Preparation of input files
+## **Ligand-Free(LF) mode**  
   In the LF mode of P2C, **protein 3D structure file (PDB format)** need to be prepared. If the PDB file contains substrates such as DNA, RNA, ligands, etc., I recommend removing them so that fpocket can work properly.
   
-* **Ligand-Bound(LB) mode**  
+## **Ligand-Bound(LB) mode**  
   In the LB mode of P2C, **protein 3D structure file (PDB format)** needs to be prepared, as in LF mode. In addition, a **ligand 3D structure file (PDB format)** is required. the ligand file is used to obtain coordinate information during pocket selection and empty sites identification stages; therefore, prepare the file that contains coordinates in the protein-bound state.
 
 ## Running
