@@ -64,18 +64,16 @@ There are two main modes, **Ligand-Free(LF) mode** and **Ligand-Bound(LB) mode**
   ```
 
 # Preparation of input files
-## **Ligand-Free(LF) mode**  
+### **Ligand-Free(LF) mode**  
   In the LF mode of P2C, **protein 3D structure file (PDB format)** need to be prepared. If the PDB file contains substrates such as DNA, RNA, ligands, etc., I recommend removing them so that fpocket can work properly.
   
-## **Ligand-Bound(LB) mode**  
+### **Ligand-Bound(LB) mode**  
   In the LB mode of P2C, **protein 3D structure file (PDB format)** needs to be prepared, as in LF mode. In addition, a **ligand 3D structure file (PDB format)** is required. the ligand file is used to obtain coordinate information during pocket selection and empty sites identification stages; therefore, prepare the file that contains coordinates in the protein-bound state.
 
-## Running
+# Running
 To view options of P2C:
 ~~~
 $ p2c -h
-usage: p2c [-h] -m METHOD -p PROTEIN [-l LIGAND] [-d DISTANCE] [-r RANK]
-           [-c CLUSTERING] [-t THRESHOLD] [-o LOGFILENAME]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -86,6 +84,13 @@ optional arguments:
   -l LIGAND, --ligand LIGAND
                         specify ligand file (format:PDB). Use this argument
                         only when you select "LB" mode.
+  -a ALPHASPHERE, --alphasphere ALPHASPHERE
+                        specify alpha-spheres coordinetes file (format:PQR).
+                        Use this argument if you does not require alpha-
+                        spheres generation in P2C.
+  -n NUMBER, --number NUMBER
+                        specify the parameter in the alpha-spheres elimination
+                        process
   -d DISTANCE, --distance DISTANCE
                         specify the distance of included pocket. Use this
                         argument only when you select "LB" mode.
@@ -106,19 +111,43 @@ optional arguments:
                         specify logfile name (default:p2c.log)
 ~~~
 
-### **example of LF mode**
+### **(A) default LF mode**
+You can use the default LF mode if you accurately predict the binding site and the deep concavity where the core scaffold can bind.  
+To run in this case, the command is as follows:
 ~~~
 $ p2c -m LF -p protein.pdb -r 1
 ~~~
+The optional argument “-r 1” specifies the number of pockets (sorted druggability score) that execute P2C processes. 
 
-### **example of LB mode**
+### **(B) LF mode without alpha-spheres generation**
+You can perform LF mode for the refinement of alpha-spheres from other software (ex. the output by SiteFiner).  
+To run LF mode in this case, the command is as follows:
 ~~~
-$ p2c -m LB -p protein.pdb -l ligand.pdb -d 5.0
+$ p2c -m LF -p protein.pdb -a pockets.pqr -n 4
 ~~~
+“pockets.pqr” is alpha spheres coordinate file from other settings or alpha sphere-based software.  
+Note that you should use the re-optimized parameter if you use other than the default setting as pockets file. The re-optimized parameter can be specified in the optional argument “-n”.
 
-## Output files
-All output files are stored in ```fpoc_output/``` and ```p2c_output/```.  
-```fpoc_output``` contains the results of fpocket calculation.  
+### **(C) default LB mode**
+You can search deep concavity around active ligand with LB mode in P2C.  
+To run LB mode with alpha-spheres generation, the command is as follows:
+~~~
+$ p2c -m LB -p protein.pdb -l ligand.pdb -d 10
+~~~
+The range of search is specified by “-d”. “-d 10” means LB mode searches unoccupied pockets within 10 Å from the ligand.
+
+### **(D) LB mode without alpha-spheres generation**
+The same as LF mode, you can also perform LB mode for the refinement of alpha-spheres from other software.  
+To run LB mode in this case, the command is as follows:
+~~~
+$ p2c -m LB -p protein.pdb -l ligand.pdb -a pockets.pqr -n 4
+~~~
+“-a” is the same as LF mode without alpha spheres generation.  
+Note that you should use the re-optimized parameter if you use other than the default setting as pocket file. 
+
+# Output files
+All output files are stored in ```asphere_output/``` and ```p2c_output/```.  
+```asphere_output``` contains the results of alpha-spheres generation (Fpocket is used as the default generator).  
 ```p2c_output``` contains the files as follows.  
 * **default_pocket.pqr**: alpha-spheres of selected pocket in pocket selection (before elimination process)
 * **newshape_pocket.pqr**: alpha-spheres after elimination process
@@ -133,7 +162,7 @@ In LB mode, additional output files are stored in this directory.
 * **cluster/**: clustering results of "poc_next.pqr"
 * **visual_lb.pse**: pymol session file of LB mode results 
 
-## visualization
+# visualization
 You can view the results of P2C if the process terminated successfully.  
 ~~~
 $ pymol ./p2c_output/visual_lf.pse
@@ -145,9 +174,5 @@ $ pymol ./p2c_output/visual_lb.pse
 
 
 
-## others
-In the present P2C(2022/12), fpocket is used as the generation tool of alpha-spheres because this tool is free licence software. In ideal, P2C is applicable to other tools that utilize alpha-spheres algorithms (ex. SiteFinder). Actually, our usecase in supplementary materials describes the application results of Sitefinder's alpha-spheres. Note that the parameters in P2C is needed to tune for application to other tools. 
-We will update P2C and the options.
-
-
-
+# others
+In the present P2C(2022/12), fpocket is used as the default alpha-spheres generator because this tool is free licence software. P2C is applicable to other tools that utilize alpha-spheres algorithms (ex. SiteFinder). Actually, our usecase in supplementary materials describes the application results of Sitefinder's alpha-spheres. Note that the parameters in P2C is needed to tune for application to other tools. 
