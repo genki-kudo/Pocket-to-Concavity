@@ -162,7 +162,7 @@ In LB mode, additional output files are stored in this directory.
 * **cluster/**: clustering results of "poc_next.pqr"
 * **visual_lb.pse**: pymol session file of LB mode results 
 
-# visualization
+# Visualization
 You can view the results of P2C if the process terminated successfully.  
 ~~~
 $ pymol ./p2c_output/visual_lf.pse
@@ -174,5 +174,5 @@ $ pymol ./p2c_output/visual_lb.pse
 
 
 
-# others
+# Others
 In the present P2C(2022/12), fpocket is used as the default alpha-spheres generator because this tool is free licence software. P2C is applicable to other tools that utilize alpha-spheres algorithms (ex. SiteFinder). Actually, our usecase in supplementary materials describes the application results of Sitefinder's alpha-spheres. Note that the parameters in P2C is needed to tune for application to other tools. 
