@@ -1,30 +1,29 @@
 # **Pocket to Concavity (P2C)**
 ![図1](https://user-images.githubusercontent.com/96423408/180365403-939d72f2-3268-4398-8ec7-b33bd0732c14.png)
 
-**P2C is a tool for the refinement of Protein-Ligand binding site shape from alpha-spheres.**  
+**P2C is a tool for refining the of Protein-Ligand binding site shape from alpha-spheres.**  
 There are two main modes, **Ligand-Free(LF) mode** and **Ligand-Bound(LB) mode**.
 
-* ### Ligand-Free (LF) mode
+* ### LF mode
   LF mode provides the shape of the deep and druggable concavity where the core scaffold can bind.
-* ### Ligand-Bound (LB) mode
-  LB mode searches deep concavity around the bound ligand.
+* ### LB mode
+  LB mode searches the deep concavity around the bound ligand.
 
 # INSTALLATION
-**You can use P2C in Linux OS.** (We tested on the Ubuntu20.04LTS.)
+**P2C can be used in Linux OS.** (tested on Ubuntu20.04LTS).
 
 ## Requirements
 
 * **Python**  
-  We tested P2C on python3.7.10.  
-  Several modules are needed in addition to default modules.
+  P2C was tested on python3.7.10.  
+  Several modules are needed in addition to the default modules:
   * numpy(1.21.5)
   * pandas(1.3.5)
   * scikit-learn(1.0.2)
   * scipy(1.7.0)
   * pymol(open-source)
 
-  This exvironment is built as following commands if you have anaconda in the OS.  
-  (you can download and install Anaconda in the URL-> https://www.anaconda.com/download/ )
+  This environment is built by the following commands if using anaconda (download and install Anaconda here: https://www.anaconda.com/download/) in OS.
   ```
   conda create -n p2c_env python==3.7.10
   conda activate p2c_env
@@ -37,9 +36,9 @@ There are two main modes, **Ligand-Free(LF) mode** and **Ligand-Bound(LB) mode**
   ```
 
 * **Fpocket2**  
-  You can get fpocket2.tar.gz in the following URL.
+  Acquire fpocket2.tar.gz here:
   https://sourceforge.net/projects/fpocket/files/latest/download.  
-  And then, you unzip this file and make install. Set PATH in this fpocket directory.
+  Next, unzip this file and install it. Use this code to set the PATH in this fpocket directory.
   ```
   tar -xvf fpocket2.tar.gz
   cd fpocket2/
@@ -64,11 +63,11 @@ There are two main modes, **Ligand-Free(LF) mode** and **Ligand-Bound(LB) mode**
   ```
 
 # Preparation of input files
-### **Ligand-Free(LF) mode**  
-  In the LF mode of P2C, **protein 3D structure file (PDB format)** need to be prepared. If the PDB file contains substrates such as DNA, RNA, ligands, etc., I recommend removing them so that fpocket can work properly.
+### **LF mode**  
+  In the LF mode of P2C, a **protein 3D structure file (PDB format)** must be prepared. If the PDB file contains substrates, such as DNA, RNA, and ligands, it is recommended that they be removed so fpocket can function properly.
   
 ### **Ligand-Bound(LB) mode**  
-  In the LB mode of P2C, **protein 3D structure file (PDB format)** needs to be prepared, as in LF mode. In addition, a **ligand 3D structure file (PDB format)** is required. the ligand file is used to obtain coordinate information during pocket selection and empty sites identification stages; therefore, prepare the file that contains coordinates in the protein-bound state.
+  In the LB mode of P2C, a **protein 3D structure file (PDB format)** must be prepared, as in the LF mode. In addition, a **ligand 3D structure file (PDB format)** is required. The ligand file obtains coordinate information during the pocket selection and empty sites identification stages. Therefore, the file that contains coordinates in the protein-bound state must be prepared.
 
 # Running
 To view options of P2C:
@@ -112,58 +111,58 @@ optional arguments:
 ~~~
 
 ### **(A) default LF mode**
-You can use the default LF mode if you accurately predict the binding site and the deep concavity where the core scaffold can bind.  
-To run in this case, the command is as follows:
+The default LF mode can be used if the binding site and the deep concavity where the core scaffold can bind are accurately predicted.  
+The command to run this case is as follows:
 ~~~
 $ p2c -m LF -p protein.pdb -r 1
 ~~~
-The optional argument “-r 1” specifies the number of pockets (sorted druggability score) that execute P2C processes. 
+The optional argument “-r 1” specifies the number of pockets (sorted druggability score) that executes the P2C processes. 
 
 ### **(B) LF mode without alpha-spheres generation**
-You can perform LF mode for the refinement of alpha-spheres from other software (ex. the output by SiteFiner).  
-To run LF mode in this case, the command is as follows:
+The LF mode can be performed to refine alpha-spheres from other software (e.g., output by SiteFiner).  
+The command to run the LF mode, in this case, is as follows:
 ~~~
 $ p2c -m LF -p protein.pdb -a pockets.pqr -n 4
 ~~~
-“pockets.pqr” is alpha spheres coordinate file from other settings or alpha sphere-based software.  
-Note that you should use the re-optimized parameter if you use other than the default setting as pockets file. The re-optimized parameter can be specified in the optional argument “-n”.
+“pockets.pqr” is the alpha-spheres coordinate file from other settings or alpha sphere-based software.  
+Note that the re-optimized parameter should be used if the default settings are not used for the pocket file. The re-optimized parameter can be specified in the optional argument “-n”.
 
 ### **(C) default LB mode**
-You can search deep concavity around active ligand with LB mode in P2C.  
-To run LB mode with alpha-spheres generation, the command is as follows:
+The deep concavity around the active ligand can be searched with the LB mode in P2C.  
+The command to run the LB mode with alpha-spheres generation is as follows:
 ~~~
 $ p2c -m LB -p protein.pdb -l ligand.pdb -d 10
 ~~~
-The range of search is specified by “-d”. “-d 10” means LB mode searches unoccupied pockets within 10 Å from the ligand.
+The range of search is specified by “-d”. “-d 10” means the LB mode searches unoccupied pockets within 10 Å from the ligand.
 
 ### **(D) LB mode without alpha-spheres generation**
-The same as LF mode, you can also perform LB mode for the refinement of alpha-spheres from other software.  
-To run LB mode in this case, the command is as follows:
+The LB mode can be performed to refine for the refinement of alpha-spheres from other software, the same as the LF mode.  
+The command to run the LB mode, in this case, is as follows:
 ~~~
 $ p2c -m LB -p protein.pdb -l ligand.pdb -a pockets.pqr -n 4
 ~~~
-“-a” is the same as LF mode without alpha spheres generation.  
-Note that you should use the re-optimized parameter if you use other than the default setting as pocket file. 
+“-a” is the same as the LF mode without alpha-spheres generation.  
+Note that the re-optimized parameter should be used if the default settings are not used for the pocket file. 
 
 # Output files
 All output files are stored in ```asphere_output/``` and ```p2c_output/```.  
-```asphere_output``` contains the results of alpha-spheres generation (Fpocket is used as the default generator).  
-```p2c_output``` contains the files as follows.  
-* **default_pocket.pqr**: alpha-spheres of selected pocket in pocket selection (before elimination process)
-* **newshape_pocket.pqr**: alpha-spheres after elimination process
-* **visual_lf.pse**: PYMOL session file of LF mode results
-* **p2c.log**: log file
+```asphere_output``` contains the results of the alpha-spheres generation (The default generator is Fpocket).  
+```p2c_output``` contains the following files: 
+* **default_pocket.pqr**: alpha-spheres of a selected pocket in the pocket selection (before the elimination process).
+* **newshape_pocket.pqr**: alpha-spheres after the elimination process.
+* **visual_lf.pse**: the PYMOL session file of the LF mode results.
+* **p2c.log**: the log file
 
-In LB mode, additional output files are stored in this directory.  
-* **lig_lat.pdb**: lattice representation of the ligand
-* **poc_lat.pdb**: lattice representation of the newshape_pocket
-* **poc_surp.pdb**: lattice of "(poc_lat.pdb)-(lig_lat.pdb)"
-* **poc_next.pqr**: alpha-spheres that did not overlap with the ligand
-* **cluster/**: clustering results of "poc_next.pqr"
-* **visual_lb.pse**: pymol session file of LB mode results 
+In the LB mode, additional output files are stored in this directory.  
+* **lig_lat.pdb**: the lattice representation of the ligand.
+* **poc_lat.pdb**: the lattice representation of the newshape_pocket.
+* **poc_surp.pdb**: the lattice of "(poc_lat.pdb)-(lig_lat.pdb)".
+* **poc_next.pqr**: alpha-spheres that did not overlap with the ligand.
+* **cluster/**: the clustering results of "poc_next.pqr".
+* **visual_lb.pse**: the pymol session file of the LB mode results .
 
 # Visualization
-You can view the results of P2C if the process terminated successfully.  
+The results of P2C can be viewed if the process was successful by the following code:  
 ~~~
 $ pymol ./p2c_output/visual_lf.pse
 ~~~
@@ -175,4 +174,4 @@ $ pymol ./p2c_output/visual_lb.pse
 
 
 # Others
-In the present P2C(2022/12), fpocket is used as the default alpha-spheres generator because this tool is free licence software. P2C is applicable to other tools that utilize alpha-spheres algorithms (ex. SiteFinder). Actually, our usecase in supplementary materials describes the application results of Sitefinder's alpha-spheres. Note that the parameters in P2C is needed to tune for application to other tools. 
+The default alpha-spheres generator is fpocket because this tool is a free license software. However, P2C applies to other tools that utilize alpha-sphere algorithms (e.g., SiteFinder). The use case in The Supplementary Information describes the application results of Sitefinder's alpha-spheres. Note that the parameters in P2C are needed to tune the application in other tools. 
