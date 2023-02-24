@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-from script.main import main_exec
-from script.basic_func import logo
+from script_p2c.main import main_exec
+from script_p2c.basic_func import logo
 
 print("\n")
 print('-------------------')
