@@ -22,8 +22,8 @@ def fpoc_lf(protein, pro_name, rank, outdir,logfile):
     return defpoc
 
 def fpoc_lb(protein, pro_name, ligand, distance, outdir, logfile):
-    bash('fpocket -f '+protein+' -i 1 >> '+outdir+"/"+logfile)
-    #bash('/home/user01/software/fpocket2/bin/fpocket -f '+protein+' -i 1 >> '+outdir+"/"+logfile)
+    #bash('fpocket -f '+protein+' -i 1 >> '+outdir+"/"+logfile)
+    bash('/home/user01/software/fpocket2/bin/fpocket -f '+protein+' -i 1 >> '+outdir+"/"+logfile)
     #refine options in fpocket4 execution
     #bash('fpocket -f '+protein+' -i 1 -m 3.0 -M 6.0>> '+outdir+"/"+logfile)
     #row data in fpocket4 execution
