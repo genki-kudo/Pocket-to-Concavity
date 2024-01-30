@@ -58,7 +58,7 @@ There are two main modes, **Ligand-Free(LF) mode** and **Ligand-Bound(LB) mode**
   ```
   git clone https://github.com/genki-kudo/Pocket-to-Concavity  
   cd Pocket-to-Concavity/
-  echo "export PATH=\$PATH:`pwd`/bin" >> ~/.bashrc
+  echo "export PATH=\$PATH:`pwd`" >> ~/.bashrc
   source ~/.bashrc
   ```
 
