@@ -129,14 +129,36 @@ def t_file(filename):
 
 def appr(xxx):
     if xxx < 0:
-        return '{:7.03f}'.format(xxx - 0.5)
+        return '{:8.03f}'.format(xxx - 0.5)
     else:
-        return '{:7.03f}'.format(xxx + 0.5)
+        return '{:8.03f}'.format(xxx + 0.5)
         
+import itertools
 def lat_gen(inputname, outputname):
+    ori_xyz=[]
+    for i in open(inputname,'r'):
+        if i[0:6] == 'ATOM  ' or i[0:6] == 'HETATM':
+            x, y, z = math.modf(float(i[30:38]))[1], math.modf(float(i[38:46]))[1], math.modf(float(i[46:54]))[1]
+            ax, ay, az = appr(x), appr(y), appr(z)
+            three_by_three = itertools.product([-1,0,1],repeat=3)
+            for a,b,c in three_by_three:
+                ori_xyz.append([float(ax)+float(a),float(ay)+float(b),float(az)+float(c)])
+    xyz_list = list(map(list, set(map(tuple, ori_xyz))))
+    p_num = 0
+    t_file(outputname)
+    for i in xyz_list:
+        p_num+=1
+        with open(outputname,'a') as out:
+            txt = "HETATM"+str('{:5}'.format(p_num))+"      PLA A   1    "+str('{:8.03f}'.format(i[0]))+str('{:8.03f}'.format(i[1]))+str('{:8.03f}'.format(i[2])+"  1.00 10.00           H")
+            print(txt, file=out)
+    
+
+
+    """
     t_file('lat.pdb')
     p_num = 0
     poc = open(inputname,'r').readlines()
+
     lat=[]
     for line in poc:
         if line[0:6] == 'ATOM  ' or line[0:6] == 'HETATM':
@@ -179,6 +201,7 @@ def lat_gen(inputname, outputname):
             print('HETATM'+num_pdb+'      PLA A   1    '+one_x+' '+one_y+' '+one_z+'  1.00 10.00           H', file=poc)
     bash('rm lat.pdb')
     bash('rm lat_ex.txt')
+    """
 
 def logo():
     print('        PPPPPPPPP/     22222222/      CCCCCCCC/')
