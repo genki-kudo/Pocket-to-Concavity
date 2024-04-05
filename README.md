@@ -28,10 +28,10 @@ There are two main modes, **Ligand-Free(LF) mode** and **Ligand-Bound(LB) mode**
   conda create -n p2c_env python==3.7.10
   conda activate p2c_env
   
-  conda numpy==1.21.5
-  conda pandas==1.3.5
-  conda scikit-learn==1.0.2
-  conda scipy==1.7.3
+  conda install numpy==1.21.5
+  conda install pandas==1.3.5
+  conda install scikit-learn==1.0.2
+  conda install scipy==1.7.3
   conda install -c conda-forge pymol-open-source
   ```
 
@@ -58,7 +58,7 @@ There are two main modes, **Ligand-Free(LF) mode** and **Ligand-Bound(LB) mode**
   ```
   git clone https://github.com/genki-kudo/Pocket-to-Concavity  
   cd Pocket-to-Concavity/
-  echo "export PATH=\$PATH:`pwd`/bin" >> ~/.bashrc
+  echo "export PATH=\$PATH:`pwd`" >> ~/.bashrc
   source ~/.bashrc
   ```
 
