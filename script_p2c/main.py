@@ -25,6 +25,10 @@ def main_exec():
 
     bash("mkdir "+outdir)
     tmp=open(outdir+"/"+logfilename,"w").write(s)
+    
+    tmp = open(outdir+"/"+logfilename,"a").write("###fpocket location###\n")
+    bash("which fpocket >> "+outdir+"/"+logfilename)
+    tmp = open(outdir+"/"+logfilename,"a").write("###fpocket location###\n")
 
 
     if method == 'LF':
