@@ -35,23 +35,11 @@ There are two main modes, **Ligand-Free(LF) mode** and **Ligand-Bound(LB) mode**
   conda install -c conda-forge pymol-open-source
   ```
 
-* **Fpocket2**  
-  Acquire fpocket2.tar.gz here:
-  https://sourceforge.net/projects/fpocket/files/latest/download.  
-  Next, unzip this file and install it. Use this code to set the PATH in this fpocket directory.
-  ```
-  tar -xvf fpocket2.tar.gz
-  cd fpocket2/
-  make
-  make install
+* **Fpocket4**  
+  Refer to https://github.com/Discngine/fpocket
+  After fpocket installation, check to be available fpocket using CUI(run ```fpocket```).
   
-  #set PATH in this fpocket directory.
-  echo "export PATH=\$PATH:`pwd`/bin" >> ~/.bashrc
-  source ~/.bashrc
-  ```
-  If you try to install fpocket in new linux distributions, you can have an error during ```make```.  
-  In that case, change ```$(LINKER) $(LFLAGS) $^ -o $@``` the makefile to ```$(LINKER) $^ -o $@ $(LFLAGS)```.  
-  More detail of the error is referred in https://sourceforge.net/p/fpocket/mailman/message/28785185/. 
+  (P2C <= v1.0.3 used fpocket2 as alpha-spheres generator, however; >=v1.1.0 recommends fpocket4.)
 
 * **P2C**  
   Download this source code, and set PATH in this directory.  
