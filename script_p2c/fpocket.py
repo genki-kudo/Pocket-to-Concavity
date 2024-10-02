@@ -5,7 +5,7 @@ from script_p2c.basic_func import t_file, vec_xyz
 bash=lambda x:run(x,shell=True)
 
 def fpoc_lf(protein, pro_name, rank, outdir,logfile):
-    bash('fpocket -f '+protein+' >> '+outdir+"/"+logfile)
+    bash('fpocket -f '+protein+' -m 3.0 -M 7.5 >> '+outdir+"/"+logfile)
     bash('mv '+pro_name+'_out/ asphere_output/')
     inipoc = 'asphere_output/'+pro_name.split("/")[-1]+'_pockets.pqr'
     defpoc = outdir+'/default_pocket.pqr'
@@ -22,7 +22,7 @@ def fpoc_lf(protein, pro_name, rank, outdir,logfile):
     return defpoc
 
 def fpoc_lb(protein, pro_name, ligand, distance, outdir, logfile):
-    bash('fpocket -f '+protein+' -i 1 >> '+outdir+"/"+logfile)
+    bash('fpocket -f '+protein+' -i 1 -m 3.0 -M 7.5 >> '+outdir+"/"+logfile)
     bash('mv '+pro_name+'_out/ asphere_output/')
     inipoc = 'asphere_output/'+pro_name.split("/")[-1]+'_pockets.pqr'
     defpoc = outdir+'/default_pocket.pqr'
